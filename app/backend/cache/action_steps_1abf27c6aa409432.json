@@ -1,0 +1,24 @@
+{
+  "steps": [
+    "{",
+    "\"steps\": [",
+    "\"File dividend tax refund claim with Dutch Belastingdienst using IB 92 form for EUR 22,193.60 excess withholding on UNA dividend\",",
+    "\"Submit evidence of Norwegian tax residency and NL-NO treaty entitlement to 15% rate (vs. 25% applied)\",",
+    "\"Provide ABN AMRO custody statement and holding confirmation for 520,000 UNA shares to support claim\",",
+    "\"Follow up with ABN AMRO on potential at-source relief procedures for future UNA dividends\""
+  ],
+  "references": [
+    {
+      "title": "Belastingdienst \u2013 Recipient of Dividend Outside Netherlands \u2013 Refund",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/dividend-tax/dividend-payment/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund/"
+    },
+    {
+      "title": "Belastingdienst \u2013 Dividend Tax Refund Procedure",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/dividend-tax/dividend-payment/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund/recipient-of-portfolio-dividend-outside-the-netherlands-dividend-tax-refund/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund-procedure/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund-procedure"
+    },
+    {
+      "title": "Belastingdienst \u2013 IB 92 Universeel Form (treaty relief)",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/themaoverstijgend/applications_and_forms/application_for_a_partial_exemption_from_or_refund_of_dutch_dividend_tax_universal"
+    }
+  ]
+}

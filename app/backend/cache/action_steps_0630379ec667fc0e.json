@@ -1,0 +1,24 @@
+{
+  "steps": [
+    "{",
+    "\"steps\": [",
+    "\"File IB 92 Universeel form with Dutch Belastingdienst claiming NL-NO treaty rate of 15% on Unilever NV dividend\",",
+    "\"Submit supporting documentation: Norwegian tax residency certificate and ABN AMRO custody statement showing 25% withholding\",",
+    "\"Request refund of EUR 22,193.60 excess withholding (difference between 25% applied vs 15% treaty rate)\",",
+    "\"Follow up with ABN AMRO Custody to ensure future Unilever dividends apply correct 15% NL-NO treaty rate\""
+  ],
+  "references": [
+    {
+      "title": "Belastingdienst \u2013 Recipient of Dividend Outside Netherlands \u2013 Refund",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/dividend-tax/dividend-payment/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund/"
+    },
+    {
+      "title": "Belastingdienst \u2013 Dividend Tax Refund Procedure",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/dividend-tax/dividend-payment/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund/recipient-of-portfolio-dividend-outside-the-netherlands-dividend-tax-refund/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund-procedure/recipient-of-dividend-outside-the-netherlands-dividend-tax-refund-procedure"
+    },
+    {
+      "title": "Belastingdienst \u2013 IB 92 Universeel Form (treaty relief)",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/themaoverstijgend/applications_and_forms/application_for_a_partial_exemption_from_or_refund_of_dutch_dividend_tax_universal"
+    }
+  ]
+}

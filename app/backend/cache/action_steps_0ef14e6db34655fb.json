@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Submit formal reclaim request to MUFG Custody for JPY 119,850 overpayment on Nintendo Co Ltd dividend",
+    "Provide CLIENT07's Norwegian tax residency certificate and JP-NO treaty documentation supporting 10% withholding rate",
+    "Reference account 2401234567 and ISIN JP3902900004 with calculation showing correct net should be JPY 10,786,500",
+    "Request MUFG process recovery through Japanese tax authorities if standard reclaim procedures fail"
+  ],
+  "references": [
+    {
+      "title": "Japanese National Tax Agency \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Dividends",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

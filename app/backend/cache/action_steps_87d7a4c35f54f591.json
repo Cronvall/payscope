@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Submit formal reclaim to MUFG Custody for JPY 119,850 overpayment on Nintendo Co Ltd dividend with JP-NO treaty rate documentation",
+    "Provide evidence that 10% treaty rate applies (not standard 20.42%) with Norwegian tax residency certificate for CLIENT05",
+    "Reference Japanese National Tax Agency treaty provisions confirming reduced withholding for Norwegian residents",
+    "Request MUFG process refund through Japanese tax authority reclaim procedure within statutory timeframe"
+  ],
+  "references": [
+    {
+      "title": "Japanese National Tax Agency \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Dividends",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

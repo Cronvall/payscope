@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact BNP Paribas Securities to request refund of EUR 3,744.00 overpayment on TTE dividend for account 901234567",
+    "Provide documentation showing FR-NO treaty rate of 15% applies, not the 13.5% rate apparently used",
+    "Reference the double taxation agreement between France and Norway to support the correct withholding calculation",
+    "If BNP Paribas disputes, escalate with formal claim citing treaty provisions and custodian's duty to apply correct rates"
+  ],
+  "references": [
+    {
+      "title": "French Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.impots.gouv.fr/international/taxe-internationale-et-conventions-fiscales"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

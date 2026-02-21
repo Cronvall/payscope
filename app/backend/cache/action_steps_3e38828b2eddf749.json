@@ -1,0 +1,24 @@
+{
+  "steps": [
+    "{",
+    "\"steps\": [",
+    "\"File dividend tax reclaim with Danske Bank Custody for DKK 153,600 excess withholding on Novo Nordisk (NOVO B)\",",
+    "\"Submit claim to Danish Tax Administration (SKAT) using online form referencing DK-NO treaty 15% rate vs. 25% withheld\",",
+    "\"Provide documentation: account statement, treaty certification, and proof of Norwegian tax residency for CLIENT03\",",
+    "\"Follow up with custodian within 30 days to ensure reclaim submission to Danish authorities\""
+  ],
+  "references": [
+    {
+      "title": "Skat.dk \u2013 Claiming Refund of Danish Dividend Tax",
+      "url": "https://skat.dk/en-us/businesses/companies-and-foundations/companies-and-foundations/declaring-and-paying-dividends-and-dividend-tax/claiming-refund-of-danish-dividend-tax"
+    },
+    {
+      "title": "Skat.dk \u2013 Online Claim Form for Dividend Tax Refund",
+      "url": "https://skat.dk/en-us/help/forms/06-tax-dividends-royalties-and-withholding-tax-on-interest-payments/claim-refund-of-danish-dividend-tax"
+    },
+    {
+      "title": "Skatteetaten \u2013 Nordic Tax Withholding Agreement",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/foreign/employer/nordic-tax-withholding-agreement/"
+    }
+  ]
+}

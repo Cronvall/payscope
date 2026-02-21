@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File French Tax Administration Form 5001 to reclaim EUR 3,744.00 overpaid withholding tax on TotalEnergies SE dividends",
+    "Submit evidence to BNP Paribas Securities showing FR-NO treaty rate should be 15% not 13.5% applied",
+    "Include Norwegian tax residency certificate and account 901234567 dividend statement as supporting documentation",
+    "Follow up with both custodian and French tax authorities within 30 days for expedited processing"
+  ],
+  "references": [
+    {
+      "title": "impots.gouv.fr \u2013 Form 5001 (Reimbursement of WHT on Dividends)",
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/5001-sd/2024/5001-sd_4529.pdf"
+    },
+    {
+      "title": "impots.gouv.fr \u2013 Dividends (Non-Resident Information)",
+      "url": "https://www.impots.gouv.fr/international-particulier/dividends"
+    },
+    {
+      "title": "Skatteetaten \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

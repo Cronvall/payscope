@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Contact Goldman Sachs dividend department to request refund of USD 2,025.00 overpayment on GOOGL dividend (account 1901234567)",
+    "Submit formal claim with US-UK tax treaty documentation showing 15% withholding rate applies, not 13.5% rate used",
+    "Reference IRS tax treaty tables and GOV.UK treaty text to demonstrate correct withholding calculation should be USD 20,250.00",
+    "If Goldman Sachs cannot process refund directly, request they file amended Form 1042 with IRS for treaty rate correction"
+  ],
+  "references": [
+    {
+      "title": "IRS \u2013 Tax Treaty Tables (dividend/interest/royalty rates)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/tax-treaty-tables"
+    },
+    {
+      "title": "GOV.UK \u2013 UK/USA Convention Full Text (PDF)",
+      "url": "https://assets.publishing.service.gov.uk/media/5a81972ce5274a2e8ab54ce7/usa-consolidated_-_in_force.pdf"
+    },
+    {
+      "title": "IRS \u2013 UK Tax Treaty Documents",
+      "url": "https://www.irs.gov/businesses/international-businesses/united-kingdom-uk-tax-treaty-documents"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "File formal tax reclaim with Australian Taxation Office for BHP Group Ltd dividend citing AU-NO treaty 15% rate vs 25% withheld",
+    "Submit Norwegian tax residency certificate and beneficial ownership declaration to support treaty eligibility",
+    "Contact Citigroup Australia to initiate custodian-assisted reclaim process for AUD 138,750.00 overpayment",
+    "Monitor ATO processing timeline and follow up if no response within 90 days"
+  ],
+  "references": [
+    {
+      "title": "Australian Taxation Office \u2013 Tax Treaties",
+      "url": "https://www.ato.gov.au/law-and-practice/international-tax-agreements"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Dividends",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

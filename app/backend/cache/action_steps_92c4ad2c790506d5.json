@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File NTA Form 11 refund application with MUFG Custody for JPY 119,850 overpaid withholding tax on Nintendo dividends",
+    "Submit JP-NO treaty documentation showing 10% rate applies versus 15% standard rate withheld",
+    "Reference account 2401234567 and ISIN JP3902900004 in all correspondence to MUFG Custody",
+    "Follow up within 30 days if no acknowledgment received from custodian or Japanese tax authorities"
+  ],
+  "references": [
+    {
+      "title": "NTA \u2013 Refund of Overpaid Withholding Tax (Form 11)",
+      "url": "https://www.nta.go.jp/english/taxes/withholing/Information/13002.htm"
+    },
+    {
+      "title": "NTA \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    },
+    {
+      "title": "NTA \u2013 Application Forms for Income Tax Convention (Form 1 for dividends)",
+      "url": "https://www.nta.go.jp/english/taxes/withholing/tax_convention.htm"
+    }
+  ]
+}

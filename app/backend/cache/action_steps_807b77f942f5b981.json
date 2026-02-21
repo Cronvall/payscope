@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact Nordea Custody to request refund of EUR 3,607.50 overpayment on Nokia Oyj dividend for account 2901234567",
+    "Reference FI-NO tax treaty 15% withholding rate versus the 13.5% rate actually applied by custodian",
+    "Submit formal claim with dividend statement showing gross EUR 240,500 should have EUR 36,075 tax withheld, not EUR 32,467.50",
+    "If Nordea cannot process refund directly, initiate Finnish tax authority reclaim procedure for treaty rate correction"
+  ],
+  "references": [
+    {
+      "title": "Finnish Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.vero.fi/en/companies-and-associations/international-taxation/tax-treaties/"
+    },
+    {
+      "title": "Nordic Tax Withholding Agreement",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/foreign/employer/nordic-tax-withholding-agreement/"
+    }
+  ]
+}

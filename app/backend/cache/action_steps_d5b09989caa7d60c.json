@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Contact Nordea Custody to request correction of withholding tax rate from 13.5% to 15% under FI-NO treaty for Nokia Oyj dividend",
+    "Submit refund application to Vero using Form 6163e/6167e (corporations) or 6164e (individuals) for EUR 3,607.50 overpayment",
+    "Provide custodian statement showing gross EUR 240,500 and tax EUR 32,467.50 as supporting documentation",
+    "Reference Nordic Tax Withholding Agreement provisions allowing streamlined processing between Finland and Norway"
+  ],
+  "references": [
+    {
+      "title": "Vero \u2013 Refund Application (Form 6163e + 6167e for corps, 6164e for individuals)",
+      "url": "https://www.vero.fi/en/About-us/contact-us/forms/descriptions/application_for_refund_of_finnish_withh/"
+    },
+    {
+      "title": "Vero \u2013 Tax Treaties",
+      "url": "https://www.vero.fi/en/companies-and-associations/international-taxation/tax-treaties/"
+    },
+    {
+      "title": "Skatteetaten \u2013 Nordic Tax Withholding Agreement",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/foreign/employer/nordic-tax-withholding-agreement/"
+    }
+  ]
+}

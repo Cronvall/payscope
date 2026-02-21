@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File tax reclaim with ATO for AUD 138,750 overpaid withholding tax on BHP Group Ltd dividends under AU-NO treaty 15% rate",
+    "Submit Citigroup Australia statement and Norwegian tax residency certificate to support treaty benefit claim",
+    "Reference AU-NO treaty Article 10 specifying 15% maximum withholding rate for portfolio dividends to Norwegian residents",
+    "Follow up with Citigroup Australia to ensure proper treaty rate application for future BHP dividend payments"
+  ],
+  "references": [
+    {
+      "title": "ATO \u2013 Withholding from Dividends Paid to Foreign Residents",
+      "url": "https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/income/withholding-from-dividends-paid-to-foreign-residents"
+    },
+    {
+      "title": "AU Treasury \u2013 Income Tax Treaties Table",
+      "url": "https://treasury.gov.au/tax-treaties/income-tax-treaties"
+    },
+    {
+      "title": "Skatteetaten \u2013 Reduced WHT on Dividends",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/reduced-withholding-tax-on-dividends/"
+    }
+  ]
+}

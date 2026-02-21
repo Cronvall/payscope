@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact BNP Paribas Securities to request refund of EUR 3,744.00 excess withholding on TTE dividend",
+    "Submit FR-NO tax treaty documentation showing 15% rate applies to Norwegian resident",
+    "File reclaim form with French tax authorities if custodian cannot process direct refund",
+    "Monitor account 901234567 for credit within 30-60 days of submission"
+  ],
+  "references": [
+    {
+      "title": "French Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.impots.gouv.fr/international/taxe-internationale-et-conventions-fiscales"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

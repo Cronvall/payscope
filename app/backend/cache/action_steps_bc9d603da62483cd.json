@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact Deutsche Bank Custody to report overpayment of EUR 3,093.75 on DBK dividend for account 801234567",
+    "Request refund citing DE-NO tax treaty rate of 26.375% should apply vs. 25% withheld",
+    "Provide treaty documentation showing Norwegian resident status qualifies for reduced withholding",
+    "Follow up in 10 business days if no acknowledgment received from custodian"
+  ],
+  "references": [
+    {
+      "title": "German Federal Ministry of Finance \u2013 Tax Treaties",
+      "url": "https://www.bundesfinanzministerium.de/Web/EN/Issues/Taxation/Tax_Policy/tax_treaties.html"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

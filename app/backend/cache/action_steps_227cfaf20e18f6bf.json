@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Submit Form 5001 to French tax authorities requesting WHT reimbursement of EUR 3,744.00 on TotalEnergies SE dividends under FR-NO treaty 15% rate",
+    "Include BNP Paribas custodian statement showing 13.5% tax withheld (EUR 33,696) vs treaty-allowed 15% on EUR 249,600 gross",
+    "Provide Norwegian tax residency certificate to support treaty benefit eligibility for CLIENT08",
+    "Follow up with French tax administration within 3 months if no response on overpayment recovery"
+  ],
+  "references": [
+    {
+      "title": "impots.gouv.fr \u2013 Form 5001 (Reimbursement of WHT on Dividends)",
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/5001-sd/2024/5001-sd_4529.pdf"
+    },
+    {
+      "title": "impots.gouv.fr \u2013 Dividends (Non-Resident Information)",
+      "url": "https://www.impots.gouv.fr/international-particulier/dividends"
+    },
+    {
+      "title": "Skatteetaten \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact BNP Paribas Securities to request refund of EUR 3,744.00 excess withholding on TotalEnergies SE dividend",
+    "Submit formal reclaim citing FR-NO tax treaty Article 10 limiting withholding to 15% on dividend income",
+    "Provide account 901234567 statement showing 13.5% tax applied versus treaty-compliant 15% rate",
+    "Request correction within 30 days with supporting treaty documentation"
+  ],
+  "references": [
+    {
+      "title": "French Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.impots.gouv.fr/international/taxe-internationale-et-conventions-fiscales"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

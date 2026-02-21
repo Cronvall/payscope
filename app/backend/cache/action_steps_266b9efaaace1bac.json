@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact Goldman Sachs to request refund of USD 2,025.00 excess withholding on GOOGL dividend payment",
+    "Submit formal reclaim citing US-UK tax treaty Article 10 allowing 15% rate versus 13.5% applied",
+    "Provide documentation showing CLIENT07's UK tax residency status and treaty eligibility",
+    "Follow up within 30 days if no response from custodian's dividend operations team"
+  ],
+  "references": [
+    {
+      "title": "US Treasury \u2013 Tax Treaties",
+      "url": "https://home.treasury.gov/policy-issues/tax-policy/treaties"
+    },
+    {
+      "title": "HMRC Double Taxation Treaties",
+      "url": "https://www.gov.uk/government/collections/tax-treaties"
+    }
+  ]
+}

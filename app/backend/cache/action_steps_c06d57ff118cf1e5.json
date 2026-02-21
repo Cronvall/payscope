@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact RBC Investor Services to request refund of CAD 4,077.00 excess withholding tax on BMO dividend payment",
+    "Provide documentation showing CA-NO treaty entitles CLIENT08 to 15% rate, not the 13.5% applied",
+    "Reference account 1401234567 and BMO ISIN CA0679011084 for specific payment identification",
+    "If RBC cannot process refund directly, request assistance with CRA refund claim procedure"
+  ],
+  "references": [
+    {
+      "title": "Canada Revenue Agency \u2013 Tax Treaties",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/international-tax/tax-treaties.html"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Dividends",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

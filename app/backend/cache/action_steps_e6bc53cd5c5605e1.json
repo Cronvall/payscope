@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Contact Citigroup Australia to request correction of withholding tax from 25% to 15% under AU-NO treaty for BHP dividend on CLIENT02 account 1301234567",
+    "Provide documentation proving Norwegian tax residency and treaty eligibility for reduced 15% rate on AUD 1,387,500 gross dividend",
+    "Submit formal reclaim request for AUD 138,750 excess withholding tax with reference to Australia-Norway Double Tax Agreement Article 10",
+    "If custodian cannot process correction, file direct reclaim with Australian Taxation Office for treaty rate differential"
+  ],
+  "references": [
+    {
+      "title": "ATO \u2013 Withholding from Dividends Paid to Foreign Residents",
+      "url": "https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/income/withholding-from-dividends-paid-to-foreign-residents"
+    },
+    {
+      "title": "AU Treasury \u2013 Income Tax Treaties Table",
+      "url": "https://treasury.gov.au/tax-treaties/income-tax-treaties"
+    },
+    {
+      "title": "Skatteetaten \u2013 Reduced WHT on Dividends",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/reduced-withholding-tax-on-dividends/"
+    }
+  ]
+}

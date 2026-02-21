@@ -1,0 +1,17 @@
+{
+  "steps": [
+    "Contact MUFG Custody to request refund of JPY 119,850 excess withholding tax on Nintendo Co Ltd dividend payment",
+    "Reference JP-NO tax treaty Article 10 specifying 10% withholding rate versus 9% applied",
+    "Submit formal reclaim with treaty documentation and custodian payment confirmation"
+  ],
+  "references": [
+    {
+      "title": "Japanese National Tax Agency \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Dividends",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

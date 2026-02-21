@@ -1,0 +1,21 @@
+{
+  "steps": [
+    "Submit formal reclaim to Goldman Sachs referencing overpayment of USD 2,025 on GOOGL dividend due to incorrect 13.5% withholding vs treaty rate of 15%",
+    "Provide Goldman Sachs with US-UK treaty documentation showing 15% maximum withholding rate for UK resident beneficial owner",
+    "Request Goldman Sachs process refund within standard reclaim timeframe and provide confirmation of submission to IRS"
+  ],
+  "references": [
+    {
+      "title": "IRS \u2013 UK Tax Treaty Documents",
+      "url": "https://www.irs.gov/businesses/international-businesses/united-kingdom-uk-tax-treaty-documents"
+    },
+    {
+      "title": "IRS \u2013 Tax Treaty Tables (dividend/interest/royalty rates)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/tax-treaty-tables"
+    },
+    {
+      "title": "GOV.UK \u2013 UK/USA Convention Full Text (PDF)",
+      "url": "https://assets.publishing.service.gov.uk/media/5a81972ce5274a2e8ab54ce7/usa-consolidated_-_in_force.pdf"
+    }
+  ]
+}

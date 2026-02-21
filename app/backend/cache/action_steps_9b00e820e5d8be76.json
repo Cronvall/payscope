@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Submit formal tax reclaim to Citigroup Australia for AUD 138,750 citing AU-NO treaty rate of 15% vs applied 25%",
+    "Provide Norwegian tax residency certificate and treaty eligibility documentation to support 15% rate claim",
+    "Reference BHP Group Ltd (AU000000BHP4) dividend payment where 25% was withheld instead of treaty rate",
+    "Escalate to Citigroup's tax reclaim department if initial submission is delayed beyond 30 days"
+  ],
+  "references": [
+    {
+      "title": "AU Treasury \u2013 Income Tax Treaties Table",
+      "url": "https://treasury.gov.au/tax-treaties/income-tax-treaties"
+    },
+    {
+      "title": "ATO \u2013 Withholding from Dividends Paid to Foreign Residents",
+      "url": "https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/income/withholding-from-dividends-paid-to-foreign-residents"
+    },
+    {
+      "title": "Skatteetaten \u2013 Reduced WHT on Dividends",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/reduced-withholding-tax-on-dividends/"
+    }
+  ]
+}

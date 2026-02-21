@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File French tax reclaim using Form 5001 with BNP Paribas for EUR 3,744.00 overpaid WHT on TotalEnergies SE",
+    "Submit proof of Norwegian tax residency and FR-NO treaty entitlement to 15% rate vs. 30% standard rate applied",
+    "Provide custodian statement showing gross EUR 249,600 and excessive tax EUR 33,696 vs. correct EUR 29,952",
+    "Follow up with French tax authorities within 3-year statute of limitations for dividend WHT refunds"
+  ],
+  "references": [
+    {
+      "title": "impots.gouv.fr \u2013 Form 5001 (Reimbursement of WHT on Dividends)",
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/5001-sd/2024/5001-sd_4529.pdf"
+    },
+    {
+      "title": "impots.gouv.fr \u2013 Dividends (Non-Resident Information)",
+      "url": "https://www.impots.gouv.fr/international-particulier/dividends"
+    },
+    {
+      "title": "Skatteetaten \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

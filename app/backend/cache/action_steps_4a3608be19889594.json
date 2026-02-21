@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "File tax reclaim with Danske Bank Custody for DKK 153,600 excess withholding on Novo Nordisk Class B dividends",
+    "Submit DK-NO tax treaty certificate showing 15% rate applies instead of 25% withheld",
+    "Reference ISIN DK0010244508 and 160,000 shares in reclaim documentation",
+    "Follow up within 30 days if Danske Bank doesn't acknowledge the treaty rate correction"
+  ],
+  "references": [
+    {
+      "title": "Danish Tax Agency \u2013 International Taxation",
+      "url": "https://www.skat.dk/skat.aspx?oid=2244657"
+    },
+    {
+      "title": "Nordic Tax Withholding Agreement",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/foreign/employer/nordic-tax-withholding-agreement/"
+    }
+  ]
+}

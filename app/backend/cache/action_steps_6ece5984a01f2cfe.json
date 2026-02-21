@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File NTA Form 11 refund application for JPY 119,850 overpaid withholding tax on Nintendo dividend",
+    "Submit proof of Norwegian tax residency and JP-NO treaty eligibility to justify 10% rate vs. 15.06% applied",
+    "Request MUFG Custody assist with NTA filing by providing transaction details and custodial documentation",
+    "Monitor refund processing timeline (typically 2-4 months) and follow up if delayed"
+  ],
+  "references": [
+    {
+      "title": "NTA \u2013 Refund of Overpaid Withholding Tax (Form 11)",
+      "url": "https://www.nta.go.jp/english/taxes/withholing/Information/13002.htm"
+    },
+    {
+      "title": "NTA \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    },
+    {
+      "title": "Skatteetaten \u2013 Documentation for Reduced WHT",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

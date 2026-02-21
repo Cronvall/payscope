@@ -1,0 +1,24 @@
+{
+  "steps": [
+    "{",
+    "\"steps\": [",
+    "\"Contact RBC Investor Services to request refund of CAD 4,077.00 overpayment on BMO dividend for account 1401234567\",",
+    "\"Provide documentation showing CA-NO treaty entitles Norwegian resident to 15% WHT rate, not the 13.5% applied\",",
+    "\"Reference CRA Part XIII tax rates confirming 15% treaty rate for dividends to Norwegian residents\",",
+    "\"If RBC cannot process refund directly, request they file corrected tax remittance with CRA\""
+  ],
+  "references": [
+    {
+      "title": "CRA \u2013 Tax Treaties",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/international-tax/tax-treaties.html"
+    },
+    {
+      "title": "CRA \u2013 Rates for Part XIII Tax (WHT rates & treaty reduction)",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/payments-non-residents/nr4-part-xiii-tax/part-xiii-withholding-tax/rates-part-xiii-tax.html"
+    },
+    {
+      "title": "Skatteetaten \u2013 Reduced WHT on Dividends for Foreign Shareholders",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/reduced-withholding-tax-on-dividends/"
+    }
+  ]
+}

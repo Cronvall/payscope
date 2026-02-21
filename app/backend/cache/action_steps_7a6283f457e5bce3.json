@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Contact Deutsche Bank Custody to request refund of EUR 3,093.75 overpayment on DBK dividend (account 801234567)",
+    "Submit formal claim citing DE-NO tax treaty Article 10 requiring 26.375% withholding rate, not 25% applied",
+    "Provide documentation showing Norwegian tax residency and treaty entitlement for reduced withholding",
+    "If custodian refuses, initiate BZSt refund procedure directly with German tax authorities"
+  ],
+  "references": [
+    {
+      "title": "BZSt \u2013 Withholding Tax Relief (exemption & refund procedures)",
+      "url": "https://www.bzst.de/EN/Businesses/Withholding_taxes/Withholding_Tax_Relief/withholding_tax_relief_node.html"
+    },
+    {
+      "title": "BMF \u2013 Tax Treaties",
+      "url": "https://www.bundesfinanzministerium.de/Web/EN/Issues/Taxation/Tax_Policy/tax_treaties.html"
+    },
+    {
+      "title": "Skatteetaten \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

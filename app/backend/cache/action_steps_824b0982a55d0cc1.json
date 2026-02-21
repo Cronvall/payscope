@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "File tax reclaim with ABN AMRO Custody for EUR 22,193.60 overpaid withholding tax on Unilever NV (UNA)",
+    "Submit Norwegian tax residency certificate and NL-NO treaty documentation showing 15% rate applies",
+    "Reference ISIN NL0000009355 and payment date in reclaim to ensure proper processing",
+    "Follow up with ABN AMRO within 30 days if no acknowledgment of the EUR 22,193.60 reclaim request"
+  ],
+  "references": [
+    {
+      "title": "Dutch Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-the-netherlands-to-work-tax-treaties"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

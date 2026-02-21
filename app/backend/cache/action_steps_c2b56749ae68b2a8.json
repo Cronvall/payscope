@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File French tax reclaim using Form 5001 with BNP Paribas for EUR 3,744 excess withholding on TTE dividends",
+    "Submit proof of Norwegian tax residency and FR-NO treaty entitlement to 15% rate (vs. 30% standard)",
+    "Request BNP Paribas process reclaim directly with French tax authorities citing treaty Article on dividend taxation",
+    "Follow up within 30 days if no acknowledgment of EUR 3,744 refund processing"
+  ],
+  "references": [
+    {
+      "title": "impots.gouv.fr \u2013 Form 5001 (Reimbursement of WHT on Dividends)",
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/5001-sd/2024/5001-sd_4529.pdf"
+    },
+    {
+      "title": "impots.gouv.fr \u2013 Dividends (Non-Resident Information)",
+      "url": "https://www.impots.gouv.fr/international-particulier/dividends"
+    },
+    {
+      "title": "Skatteetaten \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

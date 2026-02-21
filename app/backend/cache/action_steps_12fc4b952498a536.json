@@ -1,0 +1,24 @@
+{
+  "steps": [
+    "{",
+    "\"steps\": [",
+    "\"Contact Danske Bank Custody to request correction of withholding tax rate from 25% to 15% per DK-NO tax treaty for NOVO B dividend\",",
+    "\"Submit formal tax reclaim to Danish Tax Authority (Skat) for DKK 153,600 excess withholding using online claim form\",",
+    "\"Provide documentation: Norwegian tax residency certificate, dividend statement showing 25% withholding, and treaty rate confirmation\",",
+    "\"Follow up with custodian on implementation of Nordic Tax Withholding Agreement for future Danish dividend processing\""
+  ],
+  "references": [
+    {
+      "title": "Skat.dk \u2013 Claiming Refund of Danish Dividend Tax",
+      "url": "https://skat.dk/en-us/businesses/companies-and-foundations/companies-and-foundations/declaring-and-paying-dividends-and-dividend-tax/claiming-refund-of-danish-dividend-tax"
+    },
+    {
+      "title": "Skat.dk \u2013 Online Claim Form for Dividend Tax Refund",
+      "url": "https://skat.dk/en-us/help/forms/06-tax-dividends-royalties-and-withholding-tax-on-interest-payments/claim-refund-of-danish-dividend-tax"
+    },
+    {
+      "title": "Skatteetaten \u2013 Nordic Tax Withholding Agreement",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/foreign/employer/nordic-tax-withholding-agreement/"
+    }
+  ]
+}

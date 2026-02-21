@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Contact Goldman Sachs to request refund of USD 2,025.00 excess withholding on GOOGL dividends for account 1901234567",
+    "Reference US-UK tax treaty Article 10 which limits dividend withholding to 15% for qualifying UK residents",
+    "Provide custodian with treaty rate documentation showing 15% applies, not the 13.5% rate withheld",
+    "If Goldman Sachs cannot process refund directly, request assistance with IRS Form 1042-S correction"
+  ],
+  "references": [
+    {
+      "title": "IRS \u2013 UK Tax Treaty Documents",
+      "url": "https://www.irs.gov/businesses/international-businesses/united-kingdom-uk-tax-treaty-documents"
+    },
+    {
+      "title": "GOV.UK \u2013 UK/USA Convention Full Text (PDF)",
+      "url": "https://assets.publishing.service.gov.uk/media/5a81972ce5274a2e8ab54ce7/usa-consolidated_-_in_force.pdf"
+    },
+    {
+      "title": "IRS \u2013 Tax Treaty Tables (dividend/interest/royalty rates)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/tax-treaty-tables"
+    }
+  ]
+}

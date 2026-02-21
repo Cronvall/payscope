@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "Contact Goldman Sachs dividend department to report overpayment of USD 2,025 on GOOGL dividend (account 1901234567)",
+    "Reference US-UK tax treaty Article 10 requiring 15% withholding rate, not the 13.5% applied",
+    "Request immediate refund of excess net payment with supporting treaty documentation",
+    "If Goldman Sachs disputes, escalate with IRS treaty tables showing correct 15% rate for UK residents"
+  ],
+  "references": [
+    {
+      "title": "IRS \u2013 Tax Treaty Tables (dividend/interest/royalty rates)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/tax-treaty-tables"
+    },
+    {
+      "title": "GOV.UK \u2013 UK/USA Convention Full Text (PDF)",
+      "url": "https://assets.publishing.service.gov.uk/media/5a81972ce5274a2e8ab54ce7/usa-consolidated_-_in_force.pdf"
+    },
+    {
+      "title": "IRS \u2013 UK Tax Treaty Documents",
+      "url": "https://www.irs.gov/businesses/international-businesses/united-kingdom-uk-tax-treaty-documents"
+    }
+  ]
+}

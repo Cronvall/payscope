@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "File AU-NO tax treaty reclaim with Citigroup Australia for BHP Group Ltd dividend, claiming 15% rate instead of 25% applied",
+    "Submit Norwegian Tax Administration certificate of residence and treaty eligibility documentation to support 15% withholding rate",
+    "Reference Australia-Norway Double Tax Agreement Article 10 (Dividends) for the reduced 15% rate on portfolio investments",
+    "Request refund of AUD 138,750.00 excess withholding tax from Australian Taxation Office if custodian cannot process directly"
+  ],
+  "references": [
+    {
+      "title": "Australian Taxation Office \u2013 Tax Treaties",
+      "url": "https://www.ato.gov.au/law-and-practice/international-tax-agreements"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Dividends",
+      "url": "https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/salary-loans-and-dividend/dividends-from-norwegian-companies-to-foreign-shareholders---documentation-requirements-for-reduced-withholding-tax-rate/"
+    }
+  ]
+}

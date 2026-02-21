@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "File NTA Form 11 refund claim for JPY 119,850 overpaid withholding tax on Nintendo dividend",
+    "Submit evidence of JP-NO treaty entitlement to 10% rate vs. 15% applied by MUFG",
+    "Request MUFG provide amended tax reporting reflecting correct 10% treaty rate",
+    "Follow up with NTA on refund processing timeline and any additional documentation needed"
+  ],
+  "references": [
+    {
+      "title": "NTA \u2013 Refund of Overpaid Withholding Tax (Form 11)",
+      "url": "https://www.nta.go.jp/english/taxes/withholing/Information/13002.htm"
+    },
+    {
+      "title": "NTA \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    }
+  ]
+}

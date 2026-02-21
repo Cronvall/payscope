@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Submit tax reclaim form to ABN AMRO Custody for Unilever NV (UNA) showing NL-NO treaty rate of 15% vs applied 25%",
+    "Provide Norwegian tax residency certificate to support treaty eligibility for reduced withholding",
+    "Reference NL-NO tax treaty Article 10 limiting dividend tax to 15% for qualifying Norwegian residents",
+    "Follow up with ABN AMRO within 30 days for EUR 22,193.60 reclaim processing status"
+  ],
+  "references": [
+    {
+      "title": "Dutch Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-the-netherlands-to-work-tax-treaties"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

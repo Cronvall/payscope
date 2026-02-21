@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Submit formal reclaim to BNP Paribas Securities for EUR 3,744.00 overpayment on TotalEnergies SE dividend citing FR-NO treaty 15% rate",
+    "Provide documentation showing 320,000 shares x 0.78 EUR with correct 15% withholding should yield EUR 212,160 net",
+    "Reference FR-NO tax treaty Article 10 limiting dividend withholding to 15% for qualifying Norwegian tax residents",
+    "Request BNP Paribas process refund within 30 days with interest if applicable under their custody agreement"
+  ],
+  "references": [
+    {
+      "title": "French Tax Administration \u2013 Tax Treaties",
+      "url": "https://www.impots.gouv.fr/international/taxe-internationale-et-conventions-fiscales"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "steps": [
+    "File NTA Form 11 (Refund of Overpaid Withholding Tax) with MUFG Custody to recover JPY 119,850 excess withholding tax",
+    "Submit documentation proving Norwegian tax residency and JP-NO treaty eligibility for 10% rate on Nintendo Co Ltd dividends",
+    "Request MUFG Custody apply correct 10% treaty rate (JPY 1,198,500 tax) instead of applied higher rate for account 2401234567"
+  ],
+  "references": [
+    {
+      "title": "NTA \u2013 Refund of Overpaid Withholding Tax (Form 11)",
+      "url": "https://www.nta.go.jp/english/taxes/withholing/Information/13002.htm"
+    },
+    {
+      "title": "NTA \u2013 Tax Treaties",
+      "url": "https://www.nta.go.jp/english/tax_system/treaty.htm"
+    },
+    {
+      "title": "NTA \u2013 Application Forms for Income Tax Convention (Form 1 for dividends)",
+      "url": "https://www.nta.go.jp/english/taxes/withholing/tax_convention.htm"
+    }
+  ]
+}

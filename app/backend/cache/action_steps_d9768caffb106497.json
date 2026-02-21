@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "Contact Deutsche Bank Custody to report overpayment of EUR 3,093.75 on DBK dividend payment",
+    "Reference DE-NO tax treaty Article 10 allowing 26.375% withholding vs. applied 25% standard rate",
+    "Request immediate refund processing with corrected tax calculation documentation",
+    "Escalate to Deutsche Bank's dividend reconciliation team if initial contact doesn't resolve within 5 business days"
+  ],
+  "references": [
+    {
+      "title": "German Federal Ministry of Finance \u2013 Tax Treaties",
+      "url": "https://www.bundesfinanzministerium.de/Web/EN/Issues/Taxation/Tax_Policy/tax_treaties.html"
+    },
+    {
+      "title": "Norwegian Tax Administration \u2013 Double Taxation",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/abroad/double-taxation/"
+    }
+  ]
+}
