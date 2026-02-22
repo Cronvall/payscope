@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "description": "Client profiles for form filling. Used by form_filler to populate W-8BEN-E, IB 92, Form 6163e and similar tax reclaim forms.",
   "profiles": {
     "CLIENT01": {
@@ -7,15 +7,25 @@
       "display_name": "Nordic Equity Fund I",
       "country_of_incorporation": "NO",
       "country_of_residence": "NO",
+      "country_of_citizenship": "NO",
       "legal_form": "SICAV (Investment Company with Variable Capital)",
       "address": {
         "street": "Karl Johans gate 15",
         "postal_code": "0154",
         "city": "Oslo",
+        "state_or_province": null,
         "country": "Norway"
       },
+      "mailing_address": null,
       "tax_id": "123456789MVA",
       "ftin": "NO123456789MVA",
+      "foreign_tax_id": {
+        "number": "NO123456789MVA",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT01", "DNB-NO-001-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+47 22 33 44 55",
         "email": "compliance@nordicequity.no"
@@ -24,6 +34,7 @@
         "name": "Erik Johansen",
         "initials": "EJ",
         "date_of_birth": "1975-03-15",
+        "country_of_citizenship": "NO",
         "title": "Compliance Officer"
       },
       "bank": {
@@ -40,15 +51,25 @@
       "display_name": "Bergen Asset Management",
       "country_of_incorporation": "NO",
       "country_of_residence": "NO",
+      "country_of_citizenship": "NO",
       "legal_form": "Aksjeselskap (AS)",
       "address": {
         "street": "Torgallmenningen 14",
         "postal_code": "5014",
         "city": "Bergen",
+        "state_or_province": null,
         "country": "Norway"
       },
+      "mailing_address": null,
       "tax_id": "987654321MVA",
       "ftin": "NO987654321MVA",
+      "foreign_tax_id": {
+        "number": "NO987654321MVA",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT02", "DNB-NO-002-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+47 55 33 22 11",
         "email": "tax@bergenam.no"
@@ -57,6 +78,7 @@
         "name": "Kari Hansen",
         "initials": "KH",
         "date_of_birth": "1982-07-22",
+        "country_of_citizenship": "NO",
         "title": "Tax Director"
       },
       "bank": {
@@ -73,15 +95,25 @@
       "display_name": "Trondheim Kapitalforvaltning",
       "country_of_incorporation": "NO",
       "country_of_residence": "NO",
+      "country_of_citizenship": "NO",
       "legal_form": "Allmennaksjeselskap (ASA)",
       "address": {
         "street": "Nordre gate 11",
         "postal_code": "7011",
         "city": "Trondheim",
+        "state_or_province": null,
         "country": "Norway"
       },
+      "mailing_address": null,
       "tax_id": "456789123MVA",
       "ftin": "NO456789123MVA",
+      "foreign_tax_id": {
+        "number": "NO456789123MVA",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT03", "DNB-NO-003-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+47 73 52 10 00",
         "email": "withholding@trondheimkapital.no"
@@ -90,6 +122,7 @@
         "name": "Ole Nilsen",
         "initials": "ON",
         "date_of_birth": "1978-11-08",
+        "country_of_citizenship": "NO",
         "title": "CFO"
       },
       "bank": {
@@ -106,15 +139,31 @@
       "display_name": "Stockholm Investment Trust",
       "country_of_incorporation": "SE",
       "country_of_residence": "SE",
+      "country_of_citizenship": "SE",
       "legal_form": "Aktiebolag (AB)",
       "address": {
         "street": "Sveavägen 42",
         "postal_code": "111 34",
         "city": "Stockholm",
+        "state_or_province": null,
+        "country": "Sweden"
+      },
+      "mailing_address": {
+        "street": "Box 7821",
+        "postal_code": "103 97",
+        "city": "Stockholm",
+        "state_or_province": null,
         "country": "Sweden"
       },
       "tax_id": "SE556789012301",
       "ftin": "SE556789012301",
+      "foreign_tax_id": {
+        "number": "SE556789012301",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT04", "SEB-SE-004-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+46 8 123 45 67",
         "email": "reclaim@stockholminv.se"
@@ -123,6 +172,7 @@
         "name": "Anna Lindqvist",
         "initials": "AL",
         "date_of_birth": "1980-05-12",
+        "country_of_citizenship": "SE",
         "title": "Head of Operations"
       },
       "bank": {
@@ -139,15 +189,25 @@
       "display_name": "Nordvest Pension Fund",
       "country_of_incorporation": "NO",
       "country_of_residence": "NO",
+      "country_of_citizenship": "NO",
       "legal_form": "Pension fund (Stiftelse)",
       "address": {
         "street": "Drammensveien 40",
         "postal_code": "0243",
         "city": "Oslo",
+        "state_or_province": null,
         "country": "Norway"
       },
+      "mailing_address": null,
       "tax_id": "321654987MVA",
       "ftin": "NO321654987MVA",
+      "foreign_tax_id": {
+        "number": "NO321654987MVA",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT05", "DNB-NO-005-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+47 22 96 50 00",
         "email": "tax.ops@nordvestpension.no"
@@ -156,6 +216,7 @@
         "name": "Per Olsen",
         "initials": "PO",
         "date_of_birth": "1969-09-30",
+        "country_of_citizenship": "NO",
         "title": "Director"
       },
       "bank": {
@@ -172,15 +233,31 @@
       "display_name": "Fonds de Placement Européen",
       "country_of_incorporation": "LU",
       "country_of_residence": "LU",
+      "country_of_citizenship": "LU",
       "legal_form": "Société en commandite simple (SCS)",
       "address": {
         "street": "2 Boulevard Royal",
         "postal_code": "L-2449",
         "city": "Luxembourg",
+        "state_or_province": null,
+        "country": "Luxembourg"
+      },
+      "mailing_address": {
+        "street": "c/o Alter Domus, 5 rue Guillaume Kroll",
+        "postal_code": "L-1882",
+        "city": "Luxembourg",
+        "state_or_province": null,
         "country": "Luxembourg"
       },
       "tax_id": "LU12345678",
       "ftin": "LU12345678",
+      "foreign_tax_id": {
+        "number": "LU12345678",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT06", "BCEE-LU-006-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+352 26 20 40 01",
         "email": "compliance@fpe.lu"
@@ -189,6 +266,7 @@
         "name": "Jean-Pierre Muller",
         "initials": "JPM",
         "date_of_birth": "1972-01-18",
+        "country_of_citizenship": "LU",
         "title": "Authorized Manager"
       },
       "bank": {
@@ -205,15 +283,25 @@
       "display_name": "London Capital Partners",
       "country_of_incorporation": "GB",
       "country_of_residence": "GB",
+      "country_of_citizenship": "GB",
       "legal_form": "Limited Liability Partnership",
       "address": {
         "street": "1 Threadneedle Street",
         "postal_code": "EC2R 8AQ",
         "city": "London",
+        "state_or_province": null,
         "country": "United Kingdom"
       },
+      "mailing_address": null,
       "tax_id": "OC123456",
       "ftin": "GB123456789",
+      "foreign_tax_id": {
+        "number": "GB123456789",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT07", "BARC-GB-007-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+44 20 7946 0958",
         "email": "tax.reclaims@londoncap.co.uk"
@@ -222,6 +310,7 @@
         "name": "James Mitchell",
         "initials": "JM",
         "date_of_birth": "1976-04-25",
+        "country_of_citizenship": "GB",
         "title": "Partner"
       },
       "bank": {
@@ -238,15 +327,34 @@
       "display_name": "Canadian Sovereign Wealth Fund",
       "country_of_incorporation": "CA",
       "country_of_residence": "CA",
+      "country_of_citizenship": "CA",
       "legal_form": "Corporation",
       "address": {
         "street": "100 King Street West, Suite 1600",
         "postal_code": "M5X 1A9",
         "city": "Toronto",
+        "state_or_province": "Ontario",
+        "country": "Canada"
+      },
+      "mailing_address": {
+        "street": "PO Box 480, Station Adelaide",
+        "postal_code": "M5C 2J6",
+        "city": "Toronto",
+        "state_or_province": "Ontario",
         "country": "Canada"
       },
       "tax_id": "123456789RP0001",
       "ftin": "123456789RP0001",
+      "foreign_tax_id": {
+        "number": "123456789RP0001",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": {
+        "type": "EIN",
+        "number": "98-7654321"
+      },
+      "reference_numbers": ["CLIENT08", "RBC-CA-008-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+1 416 555 0100",
         "email": "withholding@canswf.ca"
@@ -255,6 +363,7 @@
         "name": "Marie Tremblay",
         "initials": "MT",
         "date_of_birth": "1981-08-14",
+        "country_of_citizenship": "CA",
         "title": "VP Tax"
       },
       "bank": {
@@ -271,15 +380,25 @@
       "display_name": "Zurich Vermögensverwaltung",
       "country_of_incorporation": "CH",
       "country_of_residence": "CH",
+      "country_of_citizenship": "CH",
       "legal_form": "Aktiengesellschaft (AG)",
       "address": {
         "street": "Bahnhofstrasse 45",
         "postal_code": "8001",
         "city": "Zürich",
+        "state_or_province": null,
         "country": "Switzerland"
       },
+      "mailing_address": null,
       "tax_id": "CHE-123.456.789",
       "ftin": "CHE123456789",
+      "foreign_tax_id": {
+        "number": "CHE123456789",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT09", "UBS-CH-009-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+41 44 234 56 78",
         "email": "reclaim@zvvag.ch"
@@ -288,6 +407,7 @@
         "name": "Hans Meier",
         "initials": "HM",
         "date_of_birth": "1974-12-03",
+        "country_of_citizenship": "CH",
         "title": "Authorized Officer"
       },
       "bank": {
@@ -304,15 +424,31 @@
       "display_name": "Amsterdam Dividend Fund",
       "country_of_incorporation": "NL",
       "country_of_residence": "NL",
+      "country_of_citizenship": "NL",
       "legal_form": "Commanditaire vennootschap (CV)",
       "address": {
         "street": "Zuidas 420",
         "postal_code": "1082 PP",
         "city": "Amsterdam",
+        "state_or_province": null,
+        "country": "Netherlands"
+      },
+      "mailing_address": {
+        "street": "Postbus 94700",
+        "postal_code": "1090 GS",
+        "city": "Amsterdam",
+        "state_or_province": null,
         "country": "Netherlands"
       },
       "tax_id": "NL123456789B01",
       "ftin": "NL123456789B01",
+      "foreign_tax_id": {
+        "number": "NL123456789B01",
+        "not_legally_required": false
+      },
+      "us_taxpayer_id": null,
+      "reference_numbers": ["CLIENT10", "ABNA-NL-010-2025"],
+      "date_of_birth": null,
       "contact": {
         "phone": "+31 20 794 0000",
         "email": "tax@amsterdamdivfund.nl"
@@ -321,6 +457,7 @@
         "name": "Pieter van Dijk",
         "initials": "PvD",
         "date_of_birth": "1977-06-20",
+        "country_of_citizenship": "NL",
         "title": "Managing Partner"
       },
       "bank": {

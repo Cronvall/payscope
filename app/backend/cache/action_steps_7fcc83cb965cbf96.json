@@ -1,9 +1,9 @@
 {
   "steps": [
-    "Contact RBC Investor Services to report overpayment of CAD 4,077.00 on BMO dividend due to incorrect tax withholding (13.5% vs treaty rate of 15%)",
-    "Request RBC arrange return of excess CAD 4,077.00 to Canadian Revenue Agency as the custodian under-withheld tax contrary to CA-NO treaty provisions",
-    "Provide CRA Part XIII tax rates documentation showing 15% treaty rate applies to Norwegian resident CLIENT08",
-    "Follow up with RBC within 10 business days to ensure proper remittance of excess amount to CRA"
+    "Contact RBC Investor Services to report the overpayment of CAD 4,077.00 on BMO dividend payment - custodian under-withheld tax (applied 13.5% vs. treaty rate of 15%)",
+    "Request RBC to remit the excess CAD 4,077.00 to Canada Revenue Agency as additional withholding tax on behalf of CLIENT08",
+    "Obtain confirmation from RBC that the corrected 15% withholding tax rate per CA-NO treaty has been applied and excess funds transferred to CRA",
+    "Update CLIENT08 records to reflect correct net dividend amount of CAD 231,030.00 per treaty entitlement"
   ],
   "references": [
     {

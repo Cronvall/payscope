@@ -1,9 +1,9 @@
 {
   "steps": [
-    "Contact BNP Paribas Securities to report the EUR 3,744.00 overpayment on TotalEnergies SE dividend due to under-withholding (13.5% vs. treaty rate 15.0%)",
-    "Request custodian initiate corrective withholding or facilitate direct remittance to French tax authorities for the shortfall amount",
-    "Submit Form 5001 to French tax administration if required to regularize the withholding tax position for this dividend payment",
-    "Document the corrective action with both custodian and Norwegian tax authorities to ensure proper treaty compliance reporting"
+    "Contact BNP Paribas Securities to report overpayment of EUR 3,744.00 on TotalEnergies SE dividend due to under-withholding (13.5% vs treaty rate 15.0%)",
+    "Request custodian remit excess amount to French tax authorities or coordinate with client for direct payment to avoid treaty compliance issues",
+    "Document the correction with French tax authorities using Form 5001 if direct client payment is required",
+    "Ensure proper treaty rate application (15.0%) for future TotalEnergies SE dividends under FR-NO tax treaty"
   ],
   "references": [
     {

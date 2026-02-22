@@ -71,9 +71,12 @@ def _merge_profile_into_context(ctx: dict, profile: dict) -> None:
     if not profile:
         return
     addr = profile.get("address") or {}
+    mail_addr = profile.get("mailing_address") or {}
     contact = profile.get("contact") or {}
     bank = profile.get("bank") or {}
     signatory = profile.get("authorized_signatory") or {}
+    foreign_tax_id = profile.get("foreign_tax_id") or {}
+    us_taxpayer_id = profile.get("us_taxpayer_id") or {}
 
     ctx["legal_name"] = profile.get("legal_name", "")
     ctx["display_name"] = profile.get("display_name", profile.get("legal_name", ""))
@@ -81,17 +84,45 @@ def _merge_profile_into_context(ctx: dict, profile: dict) -> None:
         ctx["client_id"] = profile["legal_name"]
     ctx["country_of_incorporation"] = ctx.get("country_of_incorporation") or profile.get("country_of_incorporation", "")
     ctx["country_of_residence"] = ctx.get("country_of_residence") or profile.get("country_of_residence", "")
+    ctx["country_of_citizenship"] = profile.get("country_of_citizenship", profile.get("country_of_incorporation", ""))
 
     ctx["address_street"] = addr.get("street", "")
     ctx["address_postal_code"] = addr.get("postal_code", "")
     ctx["address_city"] = addr.get("city", "")
+    ctx["address_state_or_province"] = addr.get("state_or_province") or ""
     ctx["address_country"] = addr.get("country", "")
     ctx["address_full"] = ", ".join(
-        filter(None, [addr.get("street"), addr.get("postal_code"), addr.get("city"), addr.get("country")])
+        filter(None, [addr.get("street"), addr.get("state_or_province"), addr.get("postal_code"), addr.get("city"), addr.get("country")])
     )
 
+    if mail_addr:
+        ctx["mailing_address_street"] = mail_addr.get("street", "")
+        ctx["mailing_address_postal_code"] = mail_addr.get("postal_code", "")
+        ctx["mailing_address_city"] = mail_addr.get("city", "")
+        ctx["mailing_address_state_or_province"] = mail_addr.get("state_or_province") or ""
+        ctx["mailing_address_country"] = mail_addr.get("country", "")
+        ctx["mailing_address_full"] = ", ".join(
+            filter(None, [mail_addr.get("street"), mail_addr.get("state_or_province"), mail_addr.get("postal_code"), mail_addr.get("city"), mail_addr.get("country")])
+        )
+    else:
+        ctx["mailing_address_street"] = ctx["address_street"]
+        ctx["mailing_address_postal_code"] = ctx["address_postal_code"]
+        ctx["mailing_address_city"] = ctx["address_city"]
+        ctx["mailing_address_state_or_province"] = ctx["address_state_or_province"]
+        ctx["mailing_address_country"] = ctx["address_country"]
+        ctx["mailing_address_full"] = ctx["address_full"]
+
     ctx["tax_id"] = profile.get("tax_id", "")
-    ctx["ftin"] = profile.get("ftin", profile.get("tax_id", ""))
+    ctx["ftin"] = foreign_tax_id.get("number") or profile.get("ftin", profile.get("tax_id", ""))
+    ctx["ftin_not_legally_required"] = "Yes" if foreign_tax_id.get("not_legally_required") else ""
+
+    ctx["us_taxpayer_id"] = us_taxpayer_id.get("number", "")
+    ctx["us_taxpayer_id_type"] = us_taxpayer_id.get("type", "")
+
+    ref_numbers = profile.get("reference_numbers") or []
+    ctx["reference_numbers"] = ", ".join(ref_numbers)
+    ctx["reference_number_primary"] = ref_numbers[0] if ref_numbers else ""
+    ctx["reference_number_secondary"] = ref_numbers[1] if len(ref_numbers) > 1 else ""
 
     ctx["phone"] = contact.get("phone", "")
     ctx["email"] = contact.get("email", "")
@@ -107,6 +138,7 @@ def _merge_profile_into_context(ctx: dict, profile: dict) -> None:
     ctx["signatory_initials"] = signatory.get("initials", "")
     ctx["signatory_dob"] = signatory.get("date_of_birth", "")
     ctx["signatory_title"] = signatory.get("title", "")
+    ctx["signatory_country_of_citizenship"] = signatory.get("country_of_citizenship", ctx["country_of_citizenship"])
 
 
 def _load_errand(errand_id: str) -> dict | None:
@@ -272,13 +304,16 @@ def fill_form(case_id: str, form_key: str) -> bytes:
     if not existing_fields:
         logger.warning("PDF %s has no AcroForm fields", form_config["filename"])
 
-    for i, page in enumerate(writer.pages):
-        page_values = {k: v for k, v in field_values.items() if k in existing_fields}
-        if page_values:
-            try:
-                writer.update_page_form_field_values(page, page_values, auto_regenerate=False)
-            except Exception as e:
-                logger.warning("Error updating page %d form fields: %s", i, e)
+    # Only pass field names that actually exist in the PDF to avoid no-op writes.
+    known_field_values = {k: v for k, v in field_values.items() if k in existing_fields}
+
+    if known_field_values:
+        # Update all fields in a single pass across all pages.
+        # Calling update_page_form_field_values per-page caused fields on later
+        # pages to be silently skipped because pypdf only writes annotations
+        # present on the given page object.
+        for page in writer.pages:
+            writer.update_page_form_field_values(page, known_field_values, auto_regenerate=True)
 
     from io import BytesIO
 
