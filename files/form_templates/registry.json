@@ -1,0 +1,29 @@
+{
+  "forms": [
+    {
+      "key": "fw8bene",
+      "filename": "fw8bene.pdf",
+      "display_name": "W-8BEN-E (Certificate of Status)"
+    },
+    {
+      "key": "ib92",
+      "filename": "4432 - NL - IB92 universeel (Appendix 2).pdf",
+      "display_name": "IB 92 Universeel (Dutch dividend tax refund)"
+    },
+    {
+      "key": "6163e",
+      "filename": "6163ev20_ws.pdf",
+      "display_name": "Form 6163e (Finnish WHT refund)"
+    }
+  ],
+  "step_patterns": {
+    "W-8BEN-E": "fw8bene",
+    "W8BEN-E": "fw8bene",
+    "W-8BEN": "fw8ben",
+    "IB 92": "ib92",
+    "IB92": "ib92",
+    "6163e": "6163e",
+    "6163": "6163e",
+    "Form 6163e": "6163e"
+  }
+}

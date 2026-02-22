@@ -29,6 +29,9 @@ logs
 *.log.*
 *.log.*.*
 
+# generated filled forms
+files/case_attachments/
+
 # python
 __pycache__
 *.pyc

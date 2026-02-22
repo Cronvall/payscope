@@ -1,9 +1,9 @@
 {
   "steps": [
-    "File NTA Form 11 refund claim with MUFG Custody for JPY 119,850 overpaid withholding tax on Nintendo dividend",
-    "Submit treaty rate certificate confirming JP-NO treaty 10% rate applies to Norwegian beneficial owner",
-    "Request MUFG provide detailed tax calculation breakdown showing 9% vs 10% withholding applied",
-    "Follow up within 30 days if no response from custodian on refund processing"
+    "File NTA Form 11 refund application for JPY 119,850 overpaid withholding tax on Nintendo dividend",
+    "Submit Norwegian tax residency certificate to prove eligibility for JP-NO treaty 10% rate",
+    "Contact MUFG Custody to initiate withholding tax reclaim process for account 2401234567",
+    "Provide ISIN JP3902900004 transaction details and treaty rate documentation to support claim"
   ],
   "references": [
     {

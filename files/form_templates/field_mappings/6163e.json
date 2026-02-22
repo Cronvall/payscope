@@ -1,0 +1,22 @@
+{
+  "form_key": "6163e",
+  "fields": {
+    "099": "legal_name",
+    "100": "custodian",
+    "091": "address_street",
+    "092": "address_postal_code",
+    "095": "address_city",
+    "096": "address_country",
+    "097": "country_of_residence",
+    "098": "tax_id",
+    "101": "iban",
+    "102": "bic",
+    "504": "amount_recoverable_formatted",
+    "505": "currency",
+    "510": "company_name",
+    "013": "isin"
+  },
+  "computed": {
+    "amount_recoverable_formatted": "format_amount"
+  }
+}

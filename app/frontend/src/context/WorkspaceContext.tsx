@@ -15,6 +15,23 @@ export interface StreamLogEntry {
   timestamp: number
 }
 
+const COMPLETED_STEPS_KEY = 'payscope_completed_steps'
+
+function loadCompletedSteps(): Record<string, number[]> {
+  try {
+    const raw = localStorage.getItem(COMPLETED_STEPS_KEY)
+    if (!raw) return {}
+    const parsed = JSON.parse(raw) as Record<string, number[]>
+    return typeof parsed === 'object' && parsed !== null ? parsed : {}
+  } catch {
+    return {}
+  }
+}
+
+function saveCompletedSteps(data: Record<string, number[]>) {
+  localStorage.setItem(COMPLETED_STEPS_KEY, JSON.stringify(data))
+}
+
 interface WorkspaceContextValue {
   messages: Message[]
   actionMessages: Record<string, Message[]>
@@ -35,6 +52,8 @@ interface WorkspaceContextValue {
   stopDividendSeason: () => void
   eventStreamPaused: boolean
   togglePauseDividendSeason: () => void
+  completedSteps: Record<string, number[]>
+  toggleStepComplete: (caseId: string, stepIndex: number) => void
 }
 
 const WorkspaceContext = createContext<WorkspaceContextValue | null>(null)
@@ -50,6 +69,7 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
   const [selectedAction, setSelectedAction] = useState<Case | null>(null)
   const [actionMessages, setActionMessages] = useState<Record<string, Message[]>>({})
   const [eventStreamPaused, setEventStreamPaused] = useState(false)
+  const [completedSteps, setCompletedSteps] = useState<Record<string, number[]>>(() => loadCompletedSteps())
   const logIdRef = useRef(0)
   const unsubscribeRef = useRef<(() => void) | null>(null)
   const pausedRef = useRef(false)
@@ -158,7 +178,8 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
           return next
         })
         if (selectedAction?.id === caseId) {
-          setSelectedAction(updated)
+          const isTerminal = updated.status === 'RECOVERED' || updated.status === 'WRITTEN_OFF'
+          setSelectedAction(isTerminal ? null : updated)
         }
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to update status')
@@ -312,6 +333,18 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
     })
   }, [processEvent])
 
+  const toggleStepComplete = useCallback((caseId: string, stepIndex: number) => {
+    setCompletedSteps((prev) => {
+      const arr = prev[caseId] ?? []
+      const next = arr.includes(stepIndex)
+        ? arr.filter((i) => i !== stepIndex)
+        : [...arr, stepIndex].sort((a, b) => a - b)
+      const updated = { ...prev, [caseId]: next }
+      saveCompletedSteps(updated)
+      return updated
+    })
+  }, [])
+
   const value: WorkspaceContextValue = {
     messages,
     actionMessages,
@@ -332,6 +365,8 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
     stopDividendSeason,
     eventStreamPaused,
     togglePauseDividendSeason,
+    completedSteps,
+    toggleStepComplete,
   }
 
   return (

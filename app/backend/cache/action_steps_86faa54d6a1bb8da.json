@@ -1,9 +1,9 @@
 {
   "steps": [
-    "Contact Nordea Custody to request correction of the withholding rate from 13.5% to 15% as per FI-NO tax treaty for Nokia Oyj dividend",
-    "If custodian cannot correct directly, file refund application with Finnish Tax Authority using Form 6163e/6167e for the excess EUR 3,607.50",
-    "Provide documentation showing Norwegian tax residency and treaty entitlement to support the 15% rate claim",
-    "Follow up with custodian on implementation of Nordic Tax Withholding Agreement procedures for future Nokia dividends"
+    "Contact Nordea Custody to request correction of Nokia dividend withholding from 13.5% to 15% treaty rate (FI-NO)",
+    "Submit formal claim citing Finland-Norway tax treaty Article 10 allowing 15% maximum withholding on dividends",
+    "If custodian cannot correct, file Form 6163e/6167e directly with Vero for EUR 3,607.50 refund",
+    "Reference Nordic Tax Withholding Agreement as supporting framework for streamlined corrections"
   ],
   "references": [
     {

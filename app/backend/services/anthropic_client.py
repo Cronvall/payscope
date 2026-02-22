@@ -360,13 +360,25 @@ def generate_action_steps(
     user_prompt = "\n".join(context)
     cache_key = _cache_key("action_steps", user_prompt)
 
+    def _is_valid_task(s: str) -> bool:
+        """Temp fix: JSON fragments can't be valid task steps (e.g. {"steps": [)."""
+        t = s.strip()
+        if not t:
+            return False
+        if t.startswith("{") or t.startswith("["):
+            return False
+        if '"steps"' in t or "'steps'" in t:
+            return False
+        return True
+
     cached = _read_cache(cache_key)
     if cached and isinstance(cached.get("steps"), list):
         logger.info("Cache hit for action steps")
         refs = cached.get("references") or []
         if not refs:
             refs = _get_relevant_sources(exp.tax_treaty)[:3]
-        return cached["steps"], refs
+        steps_from_cache = [s for s in cached["steps"] if isinstance(s, str) and _is_valid_task(s)]
+        return steps_from_cache, refs
 
     client = _get_client()
     message = client.messages.create(
@@ -406,6 +418,7 @@ def generate_action_steps(
     if not isinstance(steps, list):
         steps = [str(steps)]
     steps = [s if isinstance(s, str) else str(s) for s in steps][:6]
+    steps = [s for s in steps if _is_valid_task(s)]
 
     # Fallback: if AI didn't return references, attach relevant sources
     if not references and sources:

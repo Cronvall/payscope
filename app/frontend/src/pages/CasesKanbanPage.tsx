@@ -131,7 +131,7 @@ function KanbanColumn({
 }
 
 export default function CasesKanbanPage() {
-  const { actionItems, transitionCaseStatus } = useWorkspace()
+  const { actionItems, transitionCaseStatus, completedSteps, toggleStepComplete } = useWorkspace()
   const [draggedCase, setDraggedCase] = useState<Case | null>(null)
   const [selectedCase, setSelectedCase] = useState<Case | null>(null)
   const [isTransitioning, setIsTransitioning] = useState(false)
@@ -231,13 +231,36 @@ export default function CasesKanbanPage() {
               {formatCurrency(selectedCase.amount_recoverable, selectedCase.currency)} recoverable
             </p>
             {selectedCase.steps.length > 0 && (
-              <ul className="mt-3 space-y-1 text-sm text-zinc-400">
-                {selectedCase.steps.map((step, i) => (
-                  <li key={i} className="flex gap-2">
-                    <span className="text-zinc-600">{i + 1}.</span>
-                    {step}
-                  </li>
-                ))}
+              <ul className="mt-3 space-y-2 text-sm text-zinc-400">
+                {selectedCase.steps.map((step, i) => {
+                  const completed = completedSteps[selectedCase.id] ?? []
+                  const isComplete = completed.includes(i)
+                  return (
+                    <li key={i} className="flex items-start gap-2">
+                      <button
+                        type="button"
+                        onClick={() => toggleStepComplete(selectedCase.id, i)}
+                        className={`mt-0.5 shrink-0 rounded p-0.5 transition-colors ${
+                          isComplete
+                            ? 'border border-emerald-600 bg-emerald-900/30 text-emerald-400'
+                            : 'border-0 bg-transparent text-zinc-500 hover:text-zinc-400'
+                        }`}
+                        aria-label={isComplete ? 'Mark step incomplete' : 'Mark step complete'}
+                      >
+                        {isComplete ? (
+                          <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        ) : (
+                          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="4" y="4" width="16" height="16" rx="2" strokeWidth="2" />
+                          </svg>
+                        )}
+                      </button>
+                      <span className={isComplete ? 'line-through text-zinc-500' : ''}>{step}</span>
+                    </li>
+                  )
+                })}
               </ul>
             )}
             <button

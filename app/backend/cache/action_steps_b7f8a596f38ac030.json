@@ -1,9 +1,9 @@
 {
   "steps": [
-    "File French tax reclaim using Form 5001 to recover EUR 3,744.00 overpaid withholding tax on TotalEnergies dividends",
-    "Submit proof of Norwegian tax residency and FR-NO treaty entitlement to 15% rate (vs. 30% standard rate applied)",
-    "Include BNP Paribas statement showing gross EUR 249,600 with EUR 33,696 tax withheld on 320,000 TTE shares",
-    "Reference FR-NO treaty Article 10 limiting dividend withholding to 15% for qualifying Norwegian residents"
+    "Submit French Form 5001 to request reimbursement of EUR 3,744.00 excess withholding tax on TotalEnergies SE dividends",
+    "Reference FR-NO tax treaty Article 10 specifying 15% maximum rate on dividends to support the claim",
+    "Provide BNP Paribas account 901234567 statement showing 13.5% tax withheld vs. treaty-allowed 15% rate",
+    "Follow up with French tax authorities within 3 years of payment date for full refund processing"
   ],
   "references": [
     {

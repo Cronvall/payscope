@@ -126,3 +126,38 @@ export async function transitionCaseStatus(
     body: JSON.stringify({ status, ...(note && { note }) }),
   })
 }
+
+export interface FormOption {
+  key: string
+  display_name: string
+}
+
+export interface CaseAttachmentResponse {
+  id: string
+  filename: string
+  form_type: string
+  created_at: string
+}
+
+export async function listForms(): Promise<FormOption[]> {
+  return fetchApi<FormOption[]>('/forms')
+}
+
+export async function fillForm(
+  caseId: string,
+  formKey: string
+): Promise<CaseAttachmentResponse> {
+  return fetchApi<CaseAttachmentResponse>(`/cases/${caseId}/forms/fill`, {
+    method: 'POST',
+    body: JSON.stringify({ form_key: formKey }),
+  })
+}
+
+export async function listAttachments(caseId: string): Promise<CaseAttachmentResponse[]> {
+  return fetchApi<CaseAttachmentResponse[]>(`/cases/${caseId}/attachments`)
+}
+
+export function getAttachmentDownloadUrl(caseId: string, attachmentId: string): string {
+  const base = import.meta.env.VITE_API_URL || '/api'
+  return `${base}/cases/${caseId}/attachments/${attachmentId}`
+}

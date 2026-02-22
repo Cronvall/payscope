@@ -1,9 +1,9 @@
 {
   "steps": [
-    "Submit tax reclaim form to ATO referencing AU-NO treaty Article 10 for 15% WHT rate on BHP dividends",
-    "Provide Citigroup Australia with Norwegian tax residency certificate and treaty claim documentation",
-    "Request Citigroup process refund of AUD 138,750 excess withholding (25% applied vs 15% treaty rate)",
-    "Follow up with ATO within 4 years of dividend payment date for any remaining reclaim processing"
+    "File tax reclaim with ATO for BHP Group dividend citing AU-NO treaty 15% rate vs 25% withheld",
+    "Submit Form NAT 3157 with evidence of Norwegian tax residency for CLIENT10",
+    "Request Citigroup Australia provide dividend payment confirmation and tax withholding details",
+    "Follow up with Skatteetaten for reciprocal treaty confirmation if ATO requires additional documentation"
   ],
   "references": [
     {

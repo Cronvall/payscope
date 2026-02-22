@@ -1,11 +1,9 @@
 {
   "steps": [
-    "{",
-    "\"steps\": [",
     "\"Contact RBC Investor Services to request refund of CAD 4,077.00 overpayment on BMO dividend for account 1401234567\",",
-    "\"Provide documentation showing CA-NO treaty rate of 15% should apply, resulting in expected net of CAD 231,030.00\",",
-    "\"Reference CRA Part XIII tax rates confirming 15% withholding for Norwegian residents under treaty\",",
-    "\"If RBC cannot process refund directly, request they file amended tax reporting to reverse the excess withholding\""
+    "\"Provide documentation showing CA-NO treaty entitlement to 15% withholding tax rate versus the higher rate applied\",",
+    "\"Reference CRA Part XIII tax rates confirming 15% treaty rate for Norwegian residents on Canadian dividends\",",
+    "\"If RBC cannot process refund directly, file claim with CRA for excess withholding tax recovery\""
   ],
   "references": [
     {

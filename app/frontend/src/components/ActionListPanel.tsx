@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ActionItemCard from './ActionItemCard'
 import type { Case, CaseStatus } from '../types'
 
@@ -18,6 +18,8 @@ interface ActionListPanelProps {
   onSelectAction: (action: Case | null) => void
   streaming?: boolean
   errandsOptimized?: number
+  /** Statuses to exclude from the filter dropdown (e.g. terminal statuses in workspace) */
+  excludeStatuses?: CaseStatus[]
 }
 
 export default function ActionListPanel({
@@ -26,10 +28,17 @@ export default function ActionListPanel({
   onSelectAction,
   streaming,
   errandsOptimized = 0,
+  excludeStatuses = [],
 }: ActionListPanelProps) {
   const [statusFilter, setStatusFilter] = useState<CaseStatus | 'ALL'>('ALL')
-
+  const statusOptions = CASE_STATUSES.filter((s) => !excludeStatuses.includes(s))
   const filtered = statusFilter === 'ALL' ? actions : actions.filter((a) => a.status === statusFilter)
+
+  useEffect(() => {
+    if (statusFilter !== 'ALL' && excludeStatuses.includes(statusFilter)) {
+      setStatusFilter('ALL')
+    }
+  }, [excludeStatuses, statusFilter])
 
   return (
     <div className="flex h-full w-full shrink-0 flex-col border-r border-zinc-800 bg-canvas">
@@ -46,7 +55,7 @@ export default function ActionListPanel({
           className="rounded border border-zinc-700 bg-zinc-900 px-2 py-1 font-mono text-xs text-zinc-300"
         >
           <option value="ALL">All</option>
-          {CASE_STATUSES.map((s) => (
+          {statusOptions.map((s) => (
             <option key={s} value={s}>
               {s.replace(/_/g, ' ')}
             </option>

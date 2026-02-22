@@ -1,11 +1,9 @@
 {
   "steps": [
-    "{",
-    "\"steps\": [",
-    "\"Submit formal tax reclaim request to Danish Tax Authority (Skat) for excess withholding on NOVO B dividend under DK-NO treaty\",",
-    "\"File claim using Skat's online dividend tax refund form, citing 15% treaty rate vs. 25% standard rate applied\",",
-    "\"Include documentation: custodian statement showing DKK 384,000 tax withheld, treaty certificate, and proof of Norwegian tax residency\",",
-    "\"Follow up with Danske Bank Custody to ensure proper treaty rate application for future NOVO B dividend payments\""
+    "\"Submit formal tax reclaim to Skat.dk for DKK 153,600 excess withholding on NOVO B dividend under DK-NO treaty (15% vs. 25% applied)\",",
+    "\"Provide Danske Bank Custody with Norwegian tax residency certificate and treaty claim documentation for account 2801234567\",",
+    "\"File online refund claim through Skat.dk system referencing ISIN DK0010244508 and 160,000 shares dividend payment\",",
+    "\"Follow up with Danske Bank to ensure proper treaty rate application for future NOVO B dividend payments\""
   ],
   "references": [
     {

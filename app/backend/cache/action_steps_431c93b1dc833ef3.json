@@ -1,9 +1,9 @@
 {
   "steps": [
-    "File formal tax reclaim with ATO for AU000000BHP4 dividend citing AU-NO treaty 15% rate vs 25% withheld",
-    "Submit W-8BEN-E and Norwegian tax residency certificate to Citigroup Australia for account 1301234567",
-    "Request Citigroup Australia process treaty rate adjustment for BHP dividend to recover AUD 138,750.00",
-    "Follow up with Skatteetaten for confirmation of Norwegian resident status if additional documentation required"
+    "Submit tax reclaim form to Citigroup Australia for BHP Group Ltd dividend citing AU-NO treaty 15% rate versus 25% withheld",
+    "Provide Norwegian tax residency certificate to support treaty eligibility for reduced withholding",
+    "Request AUD 138,750 refund representing excess withholding (25% applied vs 15% treaty rate on AUD 1,387,500 gross)",
+    "Escalate to ATO directly if Citigroup cannot process reclaim within standard timeframe"
   ],
   "references": [
     {

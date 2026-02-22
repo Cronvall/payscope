@@ -1,9 +1,9 @@
 {
   "steps": [
-    "Submit formal tax reclaim request to Citigroup Australia for AUD 138,750 overpaid withholding tax on BHP Group dividend",
-    "Provide Norwegian tax residency certificate and reference AU-NO treaty Article 10 specifying 15% maximum rate",
-    "Request Citigroup escalate to their Australian tax team with ATO withholding guidance for foreign residents",
-    "If custodian disputes, file direct reclaim with ATO referencing treaty-reduced rate entitlement"
+    "File formal tax reclaim with Citigroup Australia for AUD 138,750 excess withholding on BHP dividend, citing AU-NO treaty 15% rate vs 25% applied",
+    "Submit Norwegian tax residency certificate and AU-NO treaty entitlement documentation to support 15% withholding rate claim",
+    "Request Citigroup provide Australian Tax Office Form for foreign resident dividend withholding adjustment",
+    "Escalate to Citigroup's tax reclaim department with calculation showing 25% applied vs 15% treaty rate on AUD 1,387,500 gross"
   ],
   "references": [
     {

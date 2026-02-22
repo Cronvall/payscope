@@ -14,6 +14,16 @@ CREATE TABLE IF NOT EXISTS cases (
   updated_at TEXT NOT NULL
 );
 
+-- case_attachments: filled PDFs associated with cases
+CREATE TABLE IF NOT EXISTS case_attachments (
+  id TEXT PRIMARY KEY,
+  case_id TEXT NOT NULL REFERENCES cases(id),
+  filename TEXT NOT NULL,
+  form_type TEXT NOT NULL,
+  storage_path TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+
 -- case_history: status transitions
 CREATE TABLE IF NOT EXISTS case_history (
   id INTEGER PRIMARY KEY AUTOINCREMENT,

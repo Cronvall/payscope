@@ -1,11 +1,9 @@
 {
   "steps": [
-    "{",
-    "\"steps\": [",
-    "\"File refund claim with Dutch tax authorities using IB 92 form for excess withholding on Unilever NV dividend\",",
-    "\"Submit documentation showing Norwegian tax residency to claim NL-NO treaty rate of 15% vs 25% withheld\",",
-    "\"Calculate refund: EUR 22,193.60 representing 10% excess tax on EUR 221,936 gross dividend\",",
-    "\"Follow up with ABN AMRO Custody on status and provide copy of refund filing for account records\""
+    "\"File Form IB 92 Universeel with Dutch Belastingdienst to claim treaty relief for Unilever NV dividend under NL-NO treaty\",",
+    "\"Submit Norwegian tax residency certificate to support 15% treaty rate application\",",
+    "\"Request ABN AMRO Custody to provide detailed tax calculation breakdown showing 25% standard rate applied\",",
+    "\"Follow up with Belastingdienst dividend tax refund procedure to recover EUR 22,193.60 excess withholding\""
   ],
   "references": [
     {

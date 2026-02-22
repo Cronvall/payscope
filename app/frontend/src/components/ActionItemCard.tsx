@@ -1,3 +1,4 @@
+import { useWorkspace } from '../context/WorkspaceContext'
 import type { Case, CaseStatus } from '../types'
 
 interface ActionItemCardProps {
@@ -32,8 +33,14 @@ const STATUS_BADGE_STYLES: Record<CaseStatus, string> = {
 }
 
 export default function ActionItemCard({ action, selected, onClick }: ActionItemCardProps) {
+  const { completedSteps } = useWorkspace()
   const typeLabel = TYPE_LABELS[action.type] ?? action.type.replace(/_/g, ' ')
   const statusStyle = STATUS_BADGE_STYLES[action.status] ?? 'bg-zinc-700/80 text-zinc-400'
+  const completed = completedSteps[action.id] ?? []
+
+  const pendingSteps = action.steps
+    .map((step, i) => ({ step, i }))
+    .filter(({ i }) => !completed.includes(i))
 
   return (
     <button
@@ -58,11 +65,11 @@ export default function ActionItemCard({ action, selected, onClick }: ActionItem
       <p className="mt-2 font-mono text-sm font-medium text-amber-400">
         {formatCurrency(action.amount_recoverable, action.currency)} recoverable
       </p>
-      {action.steps.length > 0 && (
+      {pendingSteps.length > 0 && (
         <ul className="mt-3 space-y-1 text-sm text-zinc-500">
-          {action.steps.map((step, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <span className="shrink-0 text-zinc-600">•</span>
+          {pendingSteps.map(({ step }, idx) => (
+            <li key={idx} className="flex items-start gap-2">
+              <span className="shrink-0 font-mono text-zinc-600">{idx + 1}.</span>
               <span>{step}</span>
             </li>
           ))}

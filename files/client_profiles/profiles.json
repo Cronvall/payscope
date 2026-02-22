@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "description": "Client profiles for form filling. Used by form_filler to populate W-8BEN-E, IB 92, Form 6163e and similar tax reclaim forms.",
+  "profiles": {
+    "CLIENT01": {
+      "legal_name": "Nordic Equity Fund I SICAV",
+      "display_name": "Nordic Equity Fund I",
+      "country_of_incorporation": "NO",
+      "country_of_residence": "NO",
+      "legal_form": "SICAV (Investment Company with Variable Capital)",
+      "address": {
+        "street": "Karl Johans gate 15",
+        "postal_code": "0154",
+        "city": "Oslo",
+        "country": "Norway"
+      },
+      "tax_id": "123456789MVA",
+      "ftin": "NO123456789MVA",
+      "contact": {
+        "phone": "+47 22 33 44 55",
+        "email": "compliance@nordicequity.no"
+      },
+      "authorized_signatory": {
+        "name": "Erik Johansen",
+        "initials": "EJ",
+        "date_of_birth": "1975-03-15",
+        "title": "Compliance Officer"
+      },
+      "bank": {
+        "iban": "NO9386011117947",
+        "bic": "DNBANOKK",
+        "bank_name": "DNB Bank ASA",
+        "account_holder": "Nordic Equity Fund I SICAV",
+        "bank_city": "Oslo",
+        "bank_country": "Norway"
+      }
+    },
+    "CLIENT02": {
+      "legal_name": "Bergen Asset Management AS",
+      "display_name": "Bergen Asset Management",
+      "country_of_incorporation": "NO",
+      "country_of_residence": "NO",
+      "legal_form": "Aksjeselskap (AS)",
+      "address": {
+        "street": "Torgallmenningen 14",
+        "postal_code": "5014",
+        "city": "Bergen",
+        "country": "Norway"
+      },
+      "tax_id": "987654321MVA",
+      "ftin": "NO987654321MVA",
+      "contact": {
+        "phone": "+47 55 33 22 11",
+        "email": "tax@bergenam.no"
+      },
+      "authorized_signatory": {
+        "name": "Kari Hansen",
+        "initials": "KH",
+        "date_of_birth": "1982-07-22",
+        "title": "Tax Director"
+      },
+      "bank": {
+        "iban": "NO9286011117948",
+        "bic": "DNBANOKK",
+        "bank_name": "DNB Bank ASA",
+        "account_holder": "Bergen Asset Management AS",
+        "bank_city": "Oslo",
+        "bank_country": "Norway"
+      }
+    },
+    "CLIENT03": {
+      "legal_name": "Trondheim Kapitalforvaltning ASA",
+      "display_name": "Trondheim Kapitalforvaltning",
+      "country_of_incorporation": "NO",
+      "country_of_residence": "NO",
+      "legal_form": "Allmennaksjeselskap (ASA)",
+      "address": {
+        "street": "Nordre gate 11",
+        "postal_code": "7011",
+        "city": "Trondheim",
+        "country": "Norway"
+      },
+      "tax_id": "456789123MVA",
+      "ftin": "NO456789123MVA",
+      "contact": {
+        "phone": "+47 73 52 10 00",
+        "email": "withholding@trondheimkapital.no"
+      },
+      "authorized_signatory": {
+        "name": "Ole Nilsen",
+        "initials": "ON",
+        "date_of_birth": "1978-11-08",
+        "title": "CFO"
+      },
+      "bank": {
+        "iban": "NO9393011117949",
+        "bic": "DNBANOKK",
+        "bank_name": "DNB Bank ASA",
+        "account_holder": "Trondheim Kapitalforvaltning ASA",
+        "bank_city": "Trondheim",
+        "bank_country": "Norway"
+      }
+    },
+    "CLIENT04": {
+      "legal_name": "Stockholm Investment Trust AB",
+      "display_name": "Stockholm Investment Trust",
+      "country_of_incorporation": "SE",
+      "country_of_residence": "SE",
+      "legal_form": "Aktiebolag (AB)",
+      "address": {
+        "street": "Sveavägen 42",
+        "postal_code": "111 34",
+        "city": "Stockholm",
+        "country": "Sweden"
+      },
+      "tax_id": "SE556789012301",
+      "ftin": "SE556789012301",
+      "contact": {
+        "phone": "+46 8 123 45 67",
+        "email": "reclaim@stockholminv.se"
+      },
+      "authorized_signatory": {
+        "name": "Anna Lindqvist",
+        "initials": "AL",
+        "date_of_birth": "1980-05-12",
+        "title": "Head of Operations"
+      },
+      "bank": {
+        "iban": "SE4550000000058398257466",
+        "bic": "ESSESESS",
+        "bank_name": "SEB",
+        "account_holder": "Stockholm Investment Trust AB",
+        "bank_city": "Stockholm",
+        "bank_country": "Sweden"
+      }
+    },
+    "CLIENT05": {
+      "legal_name": "Nordvest Pension Fund",
+      "display_name": "Nordvest Pension Fund",
+      "country_of_incorporation": "NO",
+      "country_of_residence": "NO",
+      "legal_form": "Pension fund (Stiftelse)",
+      "address": {
+        "street": "Drammensveien 40",
+        "postal_code": "0243",
+        "city": "Oslo",
+        "country": "Norway"
+      },
+      "tax_id": "321654987MVA",
+      "ftin": "NO321654987MVA",
+      "contact": {
+        "phone": "+47 22 96 50 00",
+        "email": "tax.ops@nordvestpension.no"
+      },
+      "authorized_signatory": {
+        "name": "Per Olsen",
+        "initials": "PO",
+        "date_of_birth": "1969-09-30",
+        "title": "Director"
+      },
+      "bank": {
+        "iban": "NO9486011117950",
+        "bic": "DNBANOKK",
+        "bank_name": "DNB Bank ASA",
+        "account_holder": "Nordvest Pension Fund",
+        "bank_city": "Oslo",
+        "bank_country": "Norway"
+      }
+    },
+    "CLIENT06": {
+      "legal_name": "Fonds de Placement Européen SCA",
+      "display_name": "Fonds de Placement Européen",
+      "country_of_incorporation": "LU",
+      "country_of_residence": "LU",
+      "legal_form": "Société en commandite simple (SCS)",
+      "address": {
+        "street": "2 Boulevard Royal",
+        "postal_code": "L-2449",
+        "city": "Luxembourg",
+        "country": "Luxembourg"
+      },
+      "tax_id": "LU12345678",
+      "ftin": "LU12345678",
+      "contact": {
+        "phone": "+352 26 20 40 01",
+        "email": "compliance@fpe.lu"
+      },
+      "authorized_signatory": {
+        "name": "Jean-Pierre Muller",
+        "initials": "JPM",
+        "date_of_birth": "1972-01-18",
+        "title": "Authorized Manager"
+      },
+      "bank": {
+        "iban": "LU280019400644750000",
+        "bic": "BCEELULL",
+        "bank_name": "Banque et Caisse d'Épargne de l'État",
+        "account_holder": "Fonds de Placement Européen SCA",
+        "bank_city": "Luxembourg",
+        "bank_country": "Luxembourg"
+      }
+    },
+    "CLIENT07": {
+      "legal_name": "London Capital Partners LLP",
+      "display_name": "London Capital Partners",
+      "country_of_incorporation": "GB",
+      "country_of_residence": "GB",
+      "legal_form": "Limited Liability Partnership",
+      "address": {
+        "street": "1 Threadneedle Street",
+        "postal_code": "EC2R 8AQ",
+        "city": "London",
+        "country": "United Kingdom"
+      },
+      "tax_id": "OC123456",
+      "ftin": "GB123456789",
+      "contact": {
+        "phone": "+44 20 7946 0958",
+        "email": "tax.reclaims@londoncap.co.uk"
+      },
+      "authorized_signatory": {
+        "name": "James Mitchell",
+        "initials": "JM",
+        "date_of_birth": "1976-04-25",
+        "title": "Partner"
+      },
+      "bank": {
+        "iban": "GB82WEST12345698765432",
+        "bic": "WESTNL2A",
+        "bank_name": "Barclays Bank",
+        "account_holder": "London Capital Partners LLP",
+        "bank_city": "London",
+        "bank_country": "United Kingdom"
+      }
+    },
+    "CLIENT08": {
+      "legal_name": "Canadian Sovereign Wealth Fund Inc.",
+      "display_name": "Canadian Sovereign Wealth Fund",
+      "country_of_incorporation": "CA",
+      "country_of_residence": "CA",
+      "legal_form": "Corporation",
+      "address": {
+        "street": "100 King Street West, Suite 1600",
+        "postal_code": "M5X 1A9",
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "tax_id": "123456789RP0001",
+      "ftin": "123456789RP0001",
+      "contact": {
+        "phone": "+1 416 555 0100",
+        "email": "withholding@canswf.ca"
+      },
+      "authorized_signatory": {
+        "name": "Marie Tremblay",
+        "initials": "MT",
+        "date_of_birth": "1981-08-14",
+        "title": "VP Tax"
+      },
+      "bank": {
+        "iban": "CA02100006125800001925844",
+        "bic": "ROYCCAT2",
+        "bank_name": "Royal Bank of Canada",
+        "account_holder": "Canadian Sovereign Wealth Fund Inc.",
+        "bank_city": "Toronto",
+        "bank_country": "Canada"
+      }
+    },
+    "CLIENT09": {
+      "legal_name": "Zurich Vermögensverwaltung AG",
+      "display_name": "Zurich Vermögensverwaltung",
+      "country_of_incorporation": "CH",
+      "country_of_residence": "CH",
+      "legal_form": "Aktiengesellschaft (AG)",
+      "address": {
+        "street": "Bahnhofstrasse 45",
+        "postal_code": "8001",
+        "city": "Zürich",
+        "country": "Switzerland"
+      },
+      "tax_id": "CHE-123.456.789",
+      "ftin": "CHE123456789",
+      "contact": {
+        "phone": "+41 44 234 56 78",
+        "email": "reclaim@zvvag.ch"
+      },
+      "authorized_signatory": {
+        "name": "Hans Meier",
+        "initials": "HM",
+        "date_of_birth": "1974-12-03",
+        "title": "Authorized Officer"
+      },
+      "bank": {
+        "iban": "CH9300762011623852957",
+        "bic": "UBSWCHZH80A",
+        "bank_name": "UBS Switzerland AG",
+        "account_holder": "Zurich Vermögensverwaltung AG",
+        "bank_city": "Zürich",
+        "bank_country": "Switzerland"
+      }
+    },
+    "CLIENT10": {
+      "legal_name": "Amsterdam Dividend Fund CV",
+      "display_name": "Amsterdam Dividend Fund",
+      "country_of_incorporation": "NL",
+      "country_of_residence": "NL",
+      "legal_form": "Commanditaire vennootschap (CV)",
+      "address": {
+        "street": "Zuidas 420",
+        "postal_code": "1082 PP",
+        "city": "Amsterdam",
+        "country": "Netherlands"
+      },
+      "tax_id": "NL123456789B01",
+      "ftin": "NL123456789B01",
+      "contact": {
+        "phone": "+31 20 794 0000",
+        "email": "tax@amsterdamdivfund.nl"
+      },
+      "authorized_signatory": {
+        "name": "Pieter van Dijk",
+        "initials": "PvD",
+        "date_of_birth": "1977-06-20",
+        "title": "Managing Partner"
+      },
+      "bank": {
+        "iban": "NL91ABNA0417164300",
+        "bic": "ABNANL2A",
+        "bank_name": "ABN AMRO Bank",
+        "account_holder": "Amsterdam Dividend Fund CV",
+        "bank_city": "Amsterdam",
+        "bank_country": "Netherlands"
+      }
+    }
+  }
+}

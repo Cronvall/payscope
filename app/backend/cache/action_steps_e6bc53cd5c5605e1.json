@@ -1,9 +1,9 @@
 {
   "steps": [
-    "Contact Citigroup Australia to request correction of withholding tax from 25% to 15% under AU-NO treaty for BHP dividend on CLIENT02 account 1301234567",
-    "Provide documentation proving Norwegian tax residency and treaty eligibility for reduced 15% rate on AUD 1,387,500 gross dividend",
-    "Submit formal reclaim request for AUD 138,750 excess withholding tax with reference to Australia-Norway Double Tax Agreement Article 10",
-    "If custodian cannot process correction, file direct reclaim with Australian Taxation Office for treaty rate differential"
+    "File formal tax reclaim with ATO referencing AU-NO treaty 15% rate for Norwegian resident vs 25% withheld on BHP dividend",
+    "Submit Citigroup Australia custodian request with treaty evidence and client Norwegian tax residency documentation",
+    "Reference ATO dividend withholding rules and Treasury treaty table to support AUD 138,750 reclaim calculation",
+    "Follow up with Skatteetaten documentation showing Norwegian resident eligibility for reduced withholding rate"
   ],
   "references": [
     {

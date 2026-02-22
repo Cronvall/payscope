@@ -1,9 +1,9 @@
 {
   "steps": [
-    "File French tax reclaim using Form 5001 with BNP Paribas for EUR 3,744 excess withholding on TTE dividends",
-    "Submit proof of Norwegian tax residency and FR-NO treaty entitlement to 15% rate (vs. 30% standard)",
-    "Request BNP Paribas process reclaim directly with French tax authorities citing treaty Article on dividend taxation",
-    "Follow up within 30 days if no acknowledgment of EUR 3,744 refund processing"
+    "File French WHT refund claim with BNP Paribas using Form 5001 for EUR 3,744.00 excess withholding on TTE dividend",
+    "Submit treaty residency certificate from Norwegian Tax Administration to support 15% FR-NO treaty rate application",
+    "Request BNP Paribas provide detailed calculation showing how 13.5% rate was applied instead of treaty rate",
+    "Follow up with custodian within 30 days if refund processing is delayed"
   ],
   "references": [
     {

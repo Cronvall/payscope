@@ -210,6 +210,15 @@ class ActionItem(BaseModel):
     status: str = "pending"
 
 
+class CaseAttachment(BaseModel):
+    """Attachment (filled form PDF) associated with a case."""
+
+    id: str
+    filename: str
+    form_type: str
+    created_at: datetime
+
+
 class Case(BaseModel):
     """Canonical case model with lifecycle status and history."""
 

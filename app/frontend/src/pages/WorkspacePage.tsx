@@ -1,9 +1,12 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import { useWorkspace } from '../context/WorkspaceContext'
 import StreamConsole from '../components/StreamConsole'
 import ActionListPanel from '../components/ActionListPanel'
 import ActionDetailPanel from '../components/ActionDetailPanel'
 import ResizeHandle from '../components/ResizeHandle'
+import type { CaseStatus } from '../types'
+
+const TERMINAL_STATUSES: CaseStatus[] = ['RECOVERED', 'WRITTEN_OFF']
 
 const MIN_LOG_WIDTH = 180
 const MIN_ACTIONS_WIDTH = 240
@@ -39,6 +42,11 @@ export default function WorkspacePage() {
     []
   )
 
+  const openCases = useMemo(
+    () => actionItems.filter((a) => !TERMINAL_STATUSES.includes(a.status)),
+    [actionItems]
+  )
+
   return (
     <div className="flex h-full w-full">
       <div
@@ -65,11 +73,16 @@ export default function WorkspacePage() {
         style={{ width: actionsWidth, minWidth: MIN_ACTIONS_WIDTH }}
       >
         <ActionListPanel
-          actions={actionItems}
-          selectedAction={selectedAction}
+          actions={openCases}
+          selectedAction={
+            selectedAction && !TERMINAL_STATUSES.includes(selectedAction.status)
+              ? selectedAction
+              : null
+          }
           onSelectAction={setSelectedAction}
           streaming={dividendSeasonStreaming}
           errandsOptimized={errandsOptimized}
+          excludeStatuses={TERMINAL_STATUSES}
         />
       </div>
       <ResizeHandle

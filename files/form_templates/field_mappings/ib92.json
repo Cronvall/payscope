@@ -1,0 +1,27 @@
+{
+  "form_key": "ib92",
+  "fields": {
+    "p1.terug.naam.0": "legal_name",
+    "p1.terug.naam.1": "legal_name",
+    "Name": "legal_name",
+    "Address": "address_full",
+    "Postal code": "address_postal_code",
+    "Town/city": "address_city",
+    "Country": "address_country",
+    "Country of residence": "country_of_residence",
+    "p1.woonland1": "country_of_residence",
+    "Tax registration number": "tax_id",
+    "Telephone number": "phone",
+    "e-mail address": "email",
+    "Initials": "signatory_initials",
+    "Date of birth": "signatory_dob",
+    "p1.bedrag.0": "amount_recoverable_formatted",
+    "p1.bruto.0": "gross_amount",
+    "p2.verzoek.0": "amount_recoverable_formatted"
+  },
+  "computed": {
+    "amount_recoverable_formatted": "format_amount",
+    "country_of_residence": "tax_treaty",
+    "gross_amount": "gross_from_context"
+  }
+}

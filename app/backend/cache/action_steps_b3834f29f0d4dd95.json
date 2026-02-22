@@ -1,9 +1,8 @@
 {
   "steps": [
-    "Contact Deutsche Bank Custody to request refund of EUR 3,093.75 overpayment on DBK dividend for account 801234567",
-    "Submit formal claim citing DE-NO tax treaty Article 10 reducing withholding from 25% to 15% for Norwegian residents",
-    "Provide supporting documentation: Norwegian tax residency certificate and treaty rate calculation showing correct net should be EUR 165,656.25",
-    "If custodian denies claim, file refund application directly with German tax authorities (BZSt) under Section 32(6) KStG"
+    "Submit refund claim to BZSt for EUR 3,093.75 overpayment on Deutsche Bank AG dividends under DE-NO treaty reduced rate (26.375%)",
+    "Provide Deutsche Bank Custody statement showing 25% withholding vs. treaty-entitled 26.375% rate for 500,000 DBK shares",
+    "Reference DE-NO tax treaty Article 10 dividend provisions supporting lower withholding rate for Norwegian resident CLIENT08"
   ],
   "references": [
     {

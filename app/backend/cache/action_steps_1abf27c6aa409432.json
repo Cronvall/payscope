@@ -1,11 +1,9 @@
 {
   "steps": [
-    "{",
-    "\"steps\": [",
-    "\"File dividend tax refund claim with Dutch Belastingdienst using IB 92 form for EUR 22,193.60 excess withholding on UNA dividend\",",
-    "\"Submit evidence of Norwegian tax residency and NL-NO treaty entitlement to 15% rate (vs. 25% applied)\",",
-    "\"Provide ABN AMRO custody statement and holding confirmation for 520,000 UNA shares to support claim\",",
-    "\"Follow up with ABN AMRO on potential at-source relief procedures for future UNA dividends\""
+    "\"Contact ABN AMRO Custody to confirm they applied 25% Dutch withholding tax instead of the 15% NL-NO treaty rate on Unilever NV dividend\",",
+    "\"Request ABN AMRO file treaty relief claim with Dutch tax authorities for the EUR 22,193.60 excess withholding\",",
+    "\"If custodian cannot recover, file direct refund claim with Belastingdienst using IB 92 form for NL-NO treaty benefits\",",
+    "\"Submit Norwegian tax residence certificate and treaty claim documentation to support the 15% rate application\""
   ],
   "references": [
     {

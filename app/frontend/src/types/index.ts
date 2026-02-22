@@ -153,6 +153,13 @@ export interface ActionItem {
   status: string
 }
 
+export interface CaseAttachment {
+  id: string
+  filename: string
+  form_type: string
+  created_at: string
+}
+
 export interface Case {
   id: string
   errand_id: string

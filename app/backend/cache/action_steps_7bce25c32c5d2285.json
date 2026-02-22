@@ -1,13 +1,13 @@
 {
   "steps": [
-    "Contact Deutsche Bank Custody to request refund of EUR 3,093.75 overpayment on DBK dividend (account 801234567)",
-    "Provide documentation showing DE-NO treaty rate should be 26.375% withholding, not 25% applied",
-    "Submit formal refund claim to BZSt if Deutsche Bank cannot process the overpayment correction directly"
+    "Contact Deutsche Bank Custody to request refund of EUR 3,093.75 overpayment on DBK dividend payment for account 801234567",
+    "Provide documentation showing DE-NO tax treaty rate of 26.375% applies, resulting in correct withholding of EUR 59,343.75 vs. EUR 56,250 withheld",
+    "If custodian cannot process refund directly, file claim with BZSt using electronic refund procedure for investment income under Section 32(6) KStG"
   ],
   "references": [
     {
-      "title": "BZSt \u2013 Withholding Tax Relief (exemption & refund procedures)",
-      "url": "https://www.bzst.de/EN/Businesses/Withholding_taxes/Withholding_Tax_Relief/withholding_tax_relief_node.html"
+      "title": "BZSt \u2013 Capital Yield Tax Relief / Refund Procedures",
+      "url": "https://www.bzst.de/EN/Businesses/Capital_Yield_Tax_Relief/electronic_filing_procedure/refund_procedure_investment_section32_6_kstg/refund_procedure_section32_6_kstg_node.html"
     },
     {
       "title": "BMF \u2013 Tax Treaties",

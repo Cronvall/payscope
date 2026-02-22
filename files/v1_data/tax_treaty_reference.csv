@@ -1,0 +1,16 @@
+TREATY_ID,SOURCE_COUNTRY,DESTINATION_COUNTRY,ASSET_CLASS,WITHHOLDING_RATE,TREATY_EFFECTIVE_DATE,NOTES
+TRT001,United States,United Kingdom,Dividends,15.0,1975-04-01,Standard rate for portfolio dividends
+TRT002,United States,United Kingdom,Dividends,5.0,1975-04-01,Reduced rate for 10%+ ownership
+TRT003,United States,Norway,Dividends,15.0,1971-11-30,Standard rate applies to institutional investors
+TRT004,United Kingdom,Norway,Dividends,0.0,2013-12-19,Zero withholding under 2013 treaty
+TRT005,Switzerland,Norway,Dividends,35.0,1987-03-07,Full Swiss domestic rate - no treaty reduction
+TRT006,Germany,Norway,Dividends,26.375,1991-10-04,Treaty rate (blend of federal and solidarity surcharge)
+TRT007,France,Norway,Dividends,15.0,1980-12-19,Standard portfolio dividend rate
+TRT008,Japan,Norway,Dividends,10.0,1992-02-21,Reduced rate for institutional investors
+TRT009,Korea,Norway,Dividends,22.0,2003-06-19,Standard rate (lower than domestic 25%)
+TRT010,Netherlands,Norway,Dividends,15.0,1990-02-12,Standard portfolio rate
+TRT011,Australia,Norway,Dividends,15.0,2006-10-24,Standard rate matches OECD model
+TRT012,Canada,Norway,Dividends,15.0,2002-11-23,Standard rate for portfolio holdings
+TRT013,Switzerland,United States,Dividends,35.0,1998-10-02,Full Swiss domestic rate applies
+TRT014,Korea,United States,Dividends,25.0,1979-06-04,Standard domestic rate (no treaty reduction for portfolio)
+TRT015,Japan,United States,Dividends,10.0,2004-03-30,Treaty rate for institutional investors

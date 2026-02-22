@@ -1,0 +1,19 @@
+{
+  "form_key": "fw8bene",
+  "fields": {
+    "topmostSubform[0].Page1[0].f1_1[0]": "legal_name",
+    "topmostSubform[0].Page1[0].f1_2[0]": "country_of_incorporation",
+    "topmostSubform[0].Page1[0].f1_4[0]": "custodian",
+    "topmostSubform[0].Page1[0].f1_5[0]": "account",
+    "topmostSubform[0].Page1[0].f1_6[0]": "company_name",
+    "topmostSubform[0].Page1[0].f1_7[0]": "amount_recoverable_formatted",
+    "topmostSubform[0].Page1[0].f1_8[0]": "tax_treaty",
+    "topmostSubform[0].Page1[0].f1_9[0]": "isin",
+    "topmostSubform[0].Page2[0].Line9a_ReadOrder[0].f2_2[0]": "ftin",
+    "topmostSubform[0].Page2[0].Line9b_ReadOrder[0].f2_3[0]": "ftin"
+  },
+  "computed": {
+    "country_of_incorporation": "tax_treaty",
+    "amount_recoverable_formatted": "format_amount"
+  }
+}

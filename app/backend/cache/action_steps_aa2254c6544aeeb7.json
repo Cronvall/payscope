@@ -1,11 +1,9 @@
 {
   "steps": [
-    "{",
-    "\"steps\": [",
-    "\"Contact Danske Bank Custody to request correction of withholding rate from 25% to 15% per DK-NO tax treaty for NOVO B dividend\",",
-    "\"Submit formal tax reclaim to Danish tax authorities (Skat) for DKK 153,600 excess withholding on 160,000 NOVO B shares\",",
-    "\"Provide Danske Bank with Norwegian tax residency certificate and treaty rate confirmation to prevent future overwithholding\",",
-    "\"Monitor account 2801234567 for credit of recoverable amount within 30-60 days of reclaim submission\""
+    "\"Contact Danske Bank Custody to request application of 15% DK-NO treaty rate instead of 25% standard rate on Novo Nordisk dividend\",",
+    "\"Submit formal tax reclaim to Danish Tax Administration (Skat) for excess withholding of DKK 153,600 using their dividend tax refund process\",",
+    "\"Provide documentation of Norwegian tax residency and treaty eligibility to support the 15% rate claim\",",
+    "\"Follow up with custodian on implementing Nordic Tax Withholding Agreement procedures for future Danish dividend payments\""
   ],
   "references": [
     {

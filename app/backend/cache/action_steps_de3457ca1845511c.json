@@ -1,9 +1,8 @@
 {
   "steps": [
-    "File French Form 5001 with impots.gouv.fr to reclaim EUR 3,744.00 excess withholding tax on TotalEnergies SE dividends",
-    "Submit supporting documentation: BNP Paribas statement, Norwegian tax residency certificate, and FR-NO treaty rate verification (15%)",
-    "Reference CLIENT06 account 901234567 and specify ISIN FR0000120271 with 320,000 shares in reimbursement claim",
-    "Follow up with BNP Paribas to ensure proper treaty rate application for future TotalEnergies distributions"
+    "File French tax reclaim using Form 5001 with BNP Paribas to recover EUR 3,744.00 excess withholding on TTE dividends",
+    "Submit proof of Norwegian tax residency and FR-NO treaty entitlement to 15% rate (vs. applied higher rate)",
+    "Request BNP Paribas expedite processing given clear treaty rate documentation for 320,000 TTE shares"
   ],
   "references": [
     {
