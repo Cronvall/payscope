@@ -107,8 +107,9 @@ function ActionDetailView({
         {action.client_id} · {action.custodian}
       </p>
       <p className="text-sm text-zinc-400">{typeLabel}</p>
-      <p className="font-mono text-sm font-medium text-amber-400">
-        {formatCurrency(action.amount_recoverable, action.currency)} recoverable
+      <p className={`font-mono text-sm font-medium ${action.type === 'overpayment_return' ? 'text-red-400' : 'text-amber-400'}`}>
+        {formatCurrency(action.amount_recoverable, action.currency)}{' '}
+        {action.type === 'overpayment_return' ? 'owed' : 'recoverable'}
       </p>
       {action.steps.length > 0 && (
         <div>

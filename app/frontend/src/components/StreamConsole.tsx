@@ -6,6 +6,8 @@ interface StreamConsoleProps {
   streaming?: boolean
   paused?: boolean
   collapsed: boolean
+  demoMode?: boolean
+  onDemoModeChange?: (on: boolean) => void
   onToggleCollapse: () => void
   onStart: () => void
   onStop: () => void
@@ -30,6 +32,8 @@ export default function StreamConsole({
   streaming,
   paused,
   collapsed,
+  demoMode = false,
+  onDemoModeChange,
   onToggleCollapse,
   onStart,
   onStop,
@@ -49,6 +53,26 @@ export default function StreamConsole({
         {!collapsed && (
           <>
             <span className="font-mono text-sm font-medium text-zinc-300">Logs</span>
+            {onDemoModeChange && (
+              <label className="flex cursor-pointer items-center gap-1.5">
+                <span className="text-xs text-zinc-500">Demo</span>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={demoMode}
+                  onClick={() => onDemoModeChange(!demoMode)}
+                  className={`relative inline-flex h-5 w-9 shrink-0 items-center rounded-full transition-colors ${
+                    demoMode ? 'bg-accent' : 'bg-zinc-700'
+                  }`}
+                >
+                  <span
+                    className={`inline-block h-3.5 w-3.5 translate-x-0.5 rounded-full bg-white transition-transform ${
+                      demoMode ? 'translate-x-4' : 'translate-x-0.5'
+                    }`}
+                  />
+                </button>
+              </label>
+            )}
             {streaming ? (
               <span className="flex gap-1">
                 {onPause && (

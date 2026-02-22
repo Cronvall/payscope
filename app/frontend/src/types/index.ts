@@ -171,6 +171,8 @@ export interface Case {
   steps: string[]
   references?: ActionItemReference[]
   status: CaseStatus
+  /** WHT jurisdiction (e.g. Germany, Japan) for team specialization */
+  jurisdiction?: string
   history?: CaseStatusHistoryEntry[]
   created_at: string
   updated_at: string

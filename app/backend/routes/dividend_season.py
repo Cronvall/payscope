@@ -13,9 +13,9 @@ from services.dividend_season_producer import stream_errands
 router = APIRouter(prefix="/dividend-season", tags=["dividend-season"])
 
 
-async def _event_generator(request: Request):
+async def _event_generator(request: Request, *, demo: bool = False):
     try:
-        async for event in stream_errands():
+        async for event in stream_errands(demo=demo):
             if event.get("type") == "action":
                 case = upsert_case(event["payload"])
                 event = {"type": "action", "payload": case.model_dump(mode="json")}
@@ -25,9 +25,9 @@ async def _event_generator(request: Request):
 
 
 @router.get("/stream")
-async def stream(request: Request):
+async def stream(request: Request, demo: bool = False):
     return StreamingResponse(
-        _event_generator(request),
+        _event_generator(request, demo=demo),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",

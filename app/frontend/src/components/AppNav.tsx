@@ -15,16 +15,6 @@ export default function AppNav() {
         Workspace
       </NavLink>
       <NavLink
-        to="/demo"
-        className={({ isActive }) =>
-          `rounded px-3 py-1.5 font-mono text-sm transition-colors ${
-            isActive ? 'bg-accent/20 text-accent' : 'text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200'
-          }`
-        }
-      >
-        Demo
-      </NavLink>
-      <NavLink
         to="/cases"
         className={({ isActive }) =>
           `rounded px-3 py-1.5 font-mono text-sm transition-colors ${

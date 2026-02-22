@@ -32,6 +32,16 @@ const STATUS_BADGE_STYLES: Record<CaseStatus, string> = {
   WRITTEN_OFF: 'bg-zinc-700/50 text-zinc-400',
 }
 
+const MAX_STEP_LENGTH = 45
+
+function abbreviateStep(step: string): string {
+  if (step.length <= MAX_STEP_LENGTH) return step
+  const cut = step.slice(0, MAX_STEP_LENGTH + 1)
+  const lastSpace = cut.lastIndexOf(' ')
+  const end = lastSpace > MAX_STEP_LENGTH / 2 ? lastSpace : MAX_STEP_LENGTH
+  return step.slice(0, end).trim() + '…'
+}
+
 export default function ActionItemCard({ action, selected, onClick }: ActionItemCardProps) {
   const { completedSteps } = useWorkspace()
   const typeLabel = TYPE_LABELS[action.type] ?? action.type.replace(/_/g, ' ')
@@ -54,23 +64,31 @@ export default function ActionItemCard({ action, selected, onClick }: ActionItem
     >
       <div className="mb-2 flex items-center justify-between gap-2">
         <span className="font-mono text-xs font-medium text-accent">{action.id}</span>
-        <span className={`rounded px-2 py-0.5 font-mono text-xs ${statusStyle}`}>
-          {action.status.replace(/_/g, ' ')}
-        </span>
+        <div className="flex items-center gap-1.5">
+          {action.jurisdiction && (
+            <span className="rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-[10px] text-zinc-400">
+              {action.jurisdiction.toUpperCase()}
+            </span>
+          )}
+          <span className={`rounded px-2 py-0.5 font-mono text-xs ${statusStyle}`}>
+            {action.status.replace(/_/g, ' ')}
+          </span>
+        </div>
       </div>
       <p className="font-mono text-sm font-medium text-zinc-200">
         {action.client_id} · {action.custodian}
       </p>
       <p className="mt-1 text-sm text-zinc-400">{typeLabel}</p>
-      <p className="mt-2 font-mono text-sm font-medium text-amber-400">
-        {formatCurrency(action.amount_recoverable, action.currency)} recoverable
+      <p className={`mt-2 font-mono text-sm font-medium ${action.type === 'overpayment_return' ? 'text-red-400' : 'text-amber-400'}`}>
+        {formatCurrency(action.amount_recoverable, action.currency)}{' '}
+        {action.type === 'overpayment_return' ? 'owed' : 'recoverable'}
       </p>
       {pendingSteps.length > 0 && (
         <ul className="mt-3 space-y-1 text-sm text-zinc-500">
           {pendingSteps.map(({ step }, idx) => (
-            <li key={idx} className="flex items-start gap-2">
+            <li key={idx} className="flex items-start gap-2" title={step.length > MAX_STEP_LENGTH ? step : undefined}>
               <span className="shrink-0 font-mono text-zinc-600">{idx + 1}.</span>
-              <span>{step}</span>
+              <span>{abbreviateStep(step)}</span>
             </li>
           ))}
         </ul>

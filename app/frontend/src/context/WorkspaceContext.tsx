@@ -52,6 +52,8 @@ interface WorkspaceContextValue {
   stopDividendSeason: () => void
   eventStreamPaused: boolean
   togglePauseDividendSeason: () => void
+  demoMode: boolean
+  setDemoMode: (on: boolean) => void
   completedSteps: Record<string, number[]>
   toggleStepComplete: (caseId: string, stepIndex: number) => void
 }
@@ -69,6 +71,7 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
   const [selectedAction, setSelectedAction] = useState<Case | null>(null)
   const [actionMessages, setActionMessages] = useState<Record<string, Message[]>>({})
   const [eventStreamPaused, setEventStreamPaused] = useState(false)
+  const [demoMode, setDemoMode] = useState(false)
   const [completedSteps, setCompletedSteps] = useState<Record<string, number[]>>(() => loadCompletedSteps())
   const logIdRef = useRef(0)
   const unsubscribeRef = useRef<(() => void) | null>(null)
@@ -297,14 +300,15 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
       () => {
         setDividendSeasonStreaming(false)
         unsubscribeRef.current = null
-      }
+      },
+      { demo: demoMode }
     )
     unsubscribeRef.current = () => {
       unsubscribe()
       setDividendSeasonStreaming(false)
       unsubscribeRef.current = null
     }
-  }, [processEvent])
+  }, [processEvent, demoMode])
 
   const stopDividendSeason = useCallback(() => {
     if (unsubscribeRef.current) {
@@ -365,6 +369,8 @@ export function WorkspaceProvider({ children }: { children: React.ReactNode }) {
     stopDividendSeason,
     eventStreamPaused,
     togglePauseDividendSeason,
+    demoMode,
+    setDemoMode,
     completedSteps,
     toggleStepComplete,
   }

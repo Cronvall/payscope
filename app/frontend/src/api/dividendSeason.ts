@@ -9,9 +9,13 @@ export type DividendSeasonEvent =
 
 export function subscribeToDividendSeasonStream(
   onEvent: (event: DividendSeasonEvent) => void,
-  onEnd?: () => void
+  onEnd?: () => void,
+  options?: { demo?: boolean }
 ): () => void {
-  const url = `${API_BASE}/dividend-season/stream`
+  const params = new URLSearchParams()
+  if (options?.demo) params.set('demo', '1')
+  const qs = params.toString()
+  const url = `${API_BASE}/dividend-season/stream${qs ? `?${qs}` : ''}`
   const eventSource = new EventSource(url)
 
   eventSource.onmessage = (e) => {

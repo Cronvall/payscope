@@ -54,10 +54,15 @@ function KanbanCard({ case_: c, isDragging, onDragStart, onSelect }: KanbanCardP
     >
       <div className="flex items-center justify-between gap-2">
         <span className="font-mono text-xs font-medium text-accent">{c.id}</span>
-        <span className="font-mono text-sm font-medium text-amber-400">
+        <span className={`font-mono text-sm font-medium ${c.type === 'overpayment_return' ? 'text-red-400' : 'text-amber-400'}`}>
           {formatCurrency(c.amount_recoverable, c.currency)}
         </span>
       </div>
+      {c.jurisdiction && (
+        <span className="mt-1 inline-block rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-[10px] text-zinc-400">
+          {c.jurisdiction}
+        </span>
+      )}
       <p className="mt-1 truncate font-mono text-xs text-zinc-400">
         {c.client_id} · {c.custodian}
       </p>
@@ -135,19 +140,32 @@ export default function CasesKanbanPage() {
   const [draggedCase, setDraggedCase] = useState<Case | null>(null)
   const [selectedCase, setSelectedCase] = useState<Case | null>(null)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [jurisdictionFilter, setJurisdictionFilter] = useState<string>('ALL')
+
+  const filteredCases =
+    jurisdictionFilter === 'ALL'
+      ? actionItems
+      : actionItems.filter((c) => (c.jurisdiction || 'Unknown').trim() === jurisdictionFilter)
 
   const casesByStatus = KANBAN_COLUMNS.reduce(
     (acc, status) => {
-      acc[status] = actionItems.filter((c) => c.status === status)
+      acc[status] = filteredCases.filter((c) => c.status === status)
       return acc
     },
     {} as Record<CaseStatus, Case[]>
   )
 
-  const openCases = actionItems.filter(
+  const allJurisdictions = [...new Set(actionItems.map((c) => (c.jurisdiction || 'Unknown').trim() || 'Unknown'))].sort()
+
+  const openCases = filteredCases.filter(
     (c) => c.status !== 'RECOVERED' && c.status !== 'WRITTEN_OFF'
   )
-  const totalRecoverable = openCases.reduce((sum, c) => sum + c.amount_recoverable, 0)
+  const totalRecoverable = openCases
+    .filter((c) => c.type !== 'overpayment_return')
+    .reduce((sum, c) => sum + c.amount_recoverable, 0)
+  const totalOwed = openCases
+    .filter((c) => c.type === 'overpayment_return')
+    .reduce((sum, c) => sum + c.amount_recoverable, 0)
 
   const handleDrop = useCallback(
     async (e: React.DragEvent, toStatus: CaseStatus) => {
@@ -186,12 +204,34 @@ export default function CasesKanbanPage() {
     <div className="flex h-full flex-col overflow-hidden">
       <div className="flex shrink-0 flex-wrap items-center gap-4 border-b border-zinc-800 px-4 py-3">
         <h1 className="font-mono text-lg font-medium text-zinc-200">Recovery Board</h1>
+        <select
+          value={jurisdictionFilter}
+          onChange={(e) => setJurisdictionFilter(e.target.value)}
+          className="rounded border border-zinc-700 bg-zinc-900 px-2 py-1 font-mono text-sm text-zinc-300"
+          title="Filter by nation/jurisdiction"
+        >
+          <option value="ALL">All nations</option>
+          {allJurisdictions.map((j) => (
+            <option key={j} value={j}>
+              {j}
+            </option>
+          ))}
+        </select>
         <div className="flex items-center gap-2">
           <span className="rounded bg-amber-900/30 px-2 py-1 font-mono text-sm text-amber-300">
             {openCases.length} open cases
           </span>
           <span className="font-mono text-sm text-zinc-400">
-            {formatCurrency(totalRecoverable)} recoverable
+            {totalRecoverable > 0 && (
+              <span className="text-amber-400">{formatCurrency(totalRecoverable)} recoverable</span>
+            )}
+            {totalRecoverable > 0 && totalOwed > 0 && <span className="mx-1">·</span>}
+            {totalOwed > 0 && (
+              <span className="text-red-400">{formatCurrency(totalOwed)} owed</span>
+            )}
+            {totalRecoverable === 0 && totalOwed === 0 && openCases.length > 0 && (
+              <span>—</span>
+            )}
           </span>
         </div>
       </div>
@@ -227,8 +267,9 @@ export default function CasesKanbanPage() {
             <p className="mt-1 text-sm text-zinc-300">
               {selectedCase.client_id} · {selectedCase.custodian}
             </p>
-            <p className="mt-1 font-mono text-amber-400">
-              {formatCurrency(selectedCase.amount_recoverable, selectedCase.currency)} recoverable
+            <p className={`mt-1 font-mono ${selectedCase.type === 'overpayment_return' ? 'text-red-400' : 'text-amber-400'}`}>
+              {formatCurrency(selectedCase.amount_recoverable, selectedCase.currency)}{' '}
+              {selectedCase.type === 'overpayment_return' ? 'owed' : 'recoverable'}
             </p>
             {selectedCase.steps.length > 0 && (
               <ul className="mt-3 space-y-2 text-sm text-zinc-400">

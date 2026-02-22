@@ -291,7 +291,10 @@ TREATY_SOURCES: dict[str, list[dict[str, str]]] = {
 }
 
 ACTION_STEPS_SYSTEM_PROMPT = """\
-You are a dividend reconciliation expert. Given full context about a custodian payment discrepancy, output 2–4 concise next steps to recover the money AND authoritative references that strengthen the claim.
+You are a dividend reconciliation expert. Given full context about a custodian payment discrepancy, output 2–4 concise next steps.
+
+For tax_reclaim or missing_followup: steps to recover the money owed to the client, with authoritative references that strengthen the claim.
+For overpayment_return: the client received more net cash than entitled (custodian under-withheld tax). Steps should address returning the excess to the tax authority or custodian — do NOT suggest the money is recoverable by the client.
 
 Be specific to this case: reference the custodian, security, tax treaty, or amount where relevant.
 Keep each step short (one line).
@@ -350,7 +353,7 @@ def generate_action_steps(
         f"  Gross: {pay.get('gross')}, Tax: {pay.get('tax')}, Net: {pay.get('net')} {pay.get('currency', '')}",
         "",
         f"Discrepancy type: {action_type}",
-        f"Recoverable: {currency} {recoverable_amount:,.2f}",
+        f"{'Amount owed by client (to return)' if action_type == 'overpayment_return' else 'Recoverable'}: {currency} {recoverable_amount:,.2f}",
         "",
         "Authoritative sources you MAY cite (use title + url exactly):",
         sources_text,

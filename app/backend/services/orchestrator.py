@@ -100,12 +100,13 @@ def _build_messages(
         steps = action_context.get("steps", [])
         refs = action_context.get("references") or []
         refs_str = ", ".join(f"{r.get('title', '')}: {r.get('url', '')}" for r in refs if r.get("url"))
+        amount_label = "owed" if action_context.get("type") == "overpayment_return" else "recoverable"
         ctx = (
             f"[User is viewing action {action_context.get('id', '?')} "
             f"(errand {action_context.get('errand_id', '?')}): "
             f"client {action_context.get('client_id', '')}, custodian {action_context.get('custodian', '')}, "
             f"type {action_context.get('type', '')}, "
-            f"{action_context.get('amount_recoverable', 0)} {action_context.get('currency', '')} recoverable. "
+            f"{action_context.get('amount_recoverable', 0)} {action_context.get('currency', '')} {amount_label}. "
             f"Steps: {steps}"
         )
         if refs_str:

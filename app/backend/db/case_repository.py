@@ -34,6 +34,12 @@ def init_db() -> None:
     try:
         conn.executescript(SCHEMA_PATH.read_text())
         conn.commit()
+        # Migration: add jurisdiction column if missing (existing DBs)
+        try:
+            conn.execute("ALTER TABLE cases ADD COLUMN jurisdiction TEXT DEFAULT ''")
+            conn.commit()
+        except sqlite3.OperationalError:
+            pass  # column already exists
     finally:
         conn.close()
 
@@ -71,6 +77,7 @@ def _row_to_case(row: sqlite3.Row) -> Case:
         steps=steps,
         references=refs,
         status=CaseStatus(row["status"]),
+        jurisdiction=(row["jurisdiction"] or "") if "jurisdiction" in row.keys() else "",
         history=history,
         created_at=datetime.fromisoformat(row["created_at"]),
         updated_at=datetime.fromisoformat(row["updated_at"]),
@@ -90,6 +97,8 @@ def upsert_case(case_dict: dict) -> Case:
         refs = case_dict.get("references") or []
         refs_json = json.dumps([{"title": r.get("title", ""), "url": r.get("url", "")} for r in refs])
 
+        jurisdiction = (case_dict.get("jurisdiction") or "").strip()[:64]
+
         if existing:
             created_at = existing["created_at"]
             status = existing["status"]
@@ -98,7 +107,7 @@ def upsert_case(case_dict: dict) -> Case:
                 UPDATE cases SET
                     errand_id = ?, client_id = ?, custodian = ?, type = ?,
                     amount_recoverable = ?, currency = ?, steps = ?, refs = ?,
-                    updated_at = ?
+                    jurisdiction = ?, updated_at = ?
                 WHERE id = ?
                 """,
                 (
@@ -110,6 +119,7 @@ def upsert_case(case_dict: dict) -> Case:
                     case_dict["currency"],
                     steps_json,
                     refs_json,
+                    jurisdiction,
                     now,
                     case_id,
                 ),
@@ -119,8 +129,8 @@ def upsert_case(case_dict: dict) -> Case:
             status = CaseStatus.AI_ANALYZED.value
             conn.execute(
                 """
-                INSERT INTO cases (id, errand_id, client_id, custodian, type, amount_recoverable, currency, steps, refs, status, created_at, updated_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO cases (id, errand_id, client_id, custodian, type, amount_recoverable, currency, steps, refs, status, jurisdiction, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     case_id,
@@ -133,6 +143,7 @@ def upsert_case(case_dict: dict) -> Case:
                     steps_json,
                     refs_json,
                     status,
+                    jurisdiction,
                     created_at,
                     now,
                 ),

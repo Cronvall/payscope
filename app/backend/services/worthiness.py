@@ -143,10 +143,11 @@ def evaluate_errand(errand: dict) -> dict:
             "currency": currency,
         }
 
+    amount_label = "owed" if action_type == "overpayment_return" else "recoverable"
     return {
         "worth_it": True,
         "recoverable_amount": round(total_recoverable, 2),
-        "reason": f"Discrepancy of {currency} {total_recoverable:,.2f} recoverable",
+        "reason": f"Discrepancy of {currency} {total_recoverable:,.2f} {amount_label}",
         "action_type": action_type,
         "suggested_actions": suggested_actions,
         "suggested_references": suggested_references,

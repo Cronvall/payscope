@@ -31,6 +31,8 @@ export default function WorkspacePage() {
     stopDividendSeason,
     eventStreamPaused,
     togglePauseDividendSeason,
+    demoMode,
+    setDemoMode,
   } = useWorkspace()
 
   const clampLogWidth = useCallback(
@@ -58,6 +60,8 @@ export default function WorkspacePage() {
           streaming={dividendSeasonStreaming}
           paused={eventStreamPaused}
           collapsed={sidebarCollapsed}
+          demoMode={demoMode}
+          onDemoModeChange={setDemoMode}
           onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
           onStart={startDividendSeason}
           onStop={stopDividendSeason}

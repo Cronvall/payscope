@@ -232,6 +232,7 @@ class Case(BaseModel):
     steps: list[str]
     references: list[ActionItemReference] = []
     status: CaseStatus
+    jurisdiction: str = ""  # WHT jurisdiction (e.g. Germany, Japan) for team specialization
     history: list[CaseStatusHistoryEntry] = []
     created_at: datetime
     updated_at: datetime
