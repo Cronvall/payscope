@@ -3,7 +3,6 @@ import ActionItemCard from './ActionItemCard'
 import type { Case, CaseStatus } from '../types'
 
 const CASE_STATUSES: CaseStatus[] = [
-  'NEW',
   'AI_ANALYZED',
   'UNDER_REVIEW',
   'DOCUMENT_REQUESTED',

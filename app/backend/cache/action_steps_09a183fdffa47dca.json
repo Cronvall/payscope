@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "File dividend tax refund claim with Danish Tax Administration (Skat) for DKK 153,600 excess withholding on Novo Nordisk dividend",
+    "Submit claim using Skat's online form, citing DK-NO tax treaty Article 10 reducing withholding from 25% to 15%",
+    "Provide Danske Bank Custody statement showing 25% withholding (DKK 384,000) versus treaty-entitled 15% (DKK 230,400)",
+    "Include Norwegian tax residency certificate for CLIENT08 to support treaty benefit eligibility"
+  ],
+  "references": [
+    {
+      "title": "Skat.dk \u2013 Claiming Refund of Danish Dividend Tax",
+      "url": "https://skat.dk/en-us/businesses/companies-and-foundations/companies-and-foundations/declaring-and-paying-dividends-and-dividend-tax/claiming-refund-of-danish-dividend-tax"
+    },
+    {
+      "title": "Skat.dk \u2013 Online Claim Form for Dividend Tax Refund",
+      "url": "https://skat.dk/en-us/help/forms/06-tax-dividends-royalties-and-withholding-tax-on-interest-payments/claim-refund-of-danish-dividend-tax"
+    }
+  ]
+}

@@ -3,7 +3,6 @@ import { useWorkspace } from '../context/WorkspaceContext'
 import type { Case, CaseStatus } from '../types'
 
 const KANBAN_COLUMNS: CaseStatus[] = [
-  'NEW',
   'AI_ANALYZED',
   'UNDER_REVIEW',
   'DOCUMENT_REQUESTED',
@@ -13,7 +12,6 @@ const KANBAN_COLUMNS: CaseStatus[] = [
 ]
 
 const COLUMN_LABELS: Record<CaseStatus, string> = {
-  NEW: 'New',
   AI_ANALYZED: 'AI Analyzed',
   UNDER_REVIEW: 'Under Review',
   DOCUMENT_REQUESTED: 'Doc Requested',
@@ -58,6 +56,9 @@ function KanbanCard({ case_: c, isDragging, onDragStart, onSelect }: KanbanCardP
           {formatCurrency(c.amount_recoverable, c.currency)}
         </span>
       </div>
+      {c.security && (
+        <p className="mt-1 text-xs font-medium text-zinc-400">{c.security}</p>
+      )}
       {c.jurisdiction && (
         <span className="mt-1 inline-block rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-[10px] text-zinc-400">
           {c.jurisdiction}

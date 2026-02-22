@@ -172,7 +172,6 @@ class PDFExtractRequest(BaseModel):
 # ---------------------------------------------------------------------------
 
 class CaseStatus(str, Enum):
-    NEW = "NEW"
     AI_ANALYZED = "AI_ANALYZED"
     UNDER_REVIEW = "UNDER_REVIEW"
     DOCUMENT_REQUESTED = "DOCUMENT_REQUESTED"
@@ -233,6 +232,7 @@ class Case(BaseModel):
     references: list[ActionItemReference] = []
     status: CaseStatus
     jurisdiction: str = ""  # WHT jurisdiction (e.g. Germany, Japan) for team specialization
+    security: str = ""  # Stock/commodity (e.g. SAP SE, Novartis AG) relevant to the case
     history: list[CaseStatusHistoryEntry] = []
     created_at: datetime
     updated_at: datetime

@@ -40,6 +40,11 @@ def init_db() -> None:
             conn.commit()
         except sqlite3.OperationalError:
             pass  # column already exists
+        try:
+            conn.execute("ALTER TABLE cases ADD COLUMN security TEXT DEFAULT ''")
+            conn.commit()
+        except sqlite3.OperationalError:
+            pass  # column already exists
     finally:
         conn.close()
 
@@ -78,6 +83,7 @@ def _row_to_case(row: sqlite3.Row) -> Case:
         references=refs,
         status=CaseStatus(row["status"]),
         jurisdiction=(row["jurisdiction"] or "") if "jurisdiction" in row.keys() else "",
+        security=(row["security"] or "") if "security" in row.keys() else "",
         history=history,
         created_at=datetime.fromisoformat(row["created_at"]),
         updated_at=datetime.fromisoformat(row["updated_at"]),
@@ -98,6 +104,7 @@ def upsert_case(case_dict: dict) -> Case:
         refs_json = json.dumps([{"title": r.get("title", ""), "url": r.get("url", "")} for r in refs])
 
         jurisdiction = (case_dict.get("jurisdiction") or "").strip()[:64]
+        security = (case_dict.get("security") or "").strip()[:128]
 
         if existing:
             created_at = existing["created_at"]
@@ -107,7 +114,7 @@ def upsert_case(case_dict: dict) -> Case:
                 UPDATE cases SET
                     errand_id = ?, client_id = ?, custodian = ?, type = ?,
                     amount_recoverable = ?, currency = ?, steps = ?, refs = ?,
-                    jurisdiction = ?, updated_at = ?
+                    jurisdiction = ?, security = ?, updated_at = ?
                 WHERE id = ?
                 """,
                 (
@@ -120,6 +127,7 @@ def upsert_case(case_dict: dict) -> Case:
                     steps_json,
                     refs_json,
                     jurisdiction,
+                    security,
                     now,
                     case_id,
                 ),
@@ -129,8 +137,8 @@ def upsert_case(case_dict: dict) -> Case:
             status = CaseStatus.AI_ANALYZED.value
             conn.execute(
                 """
-                INSERT INTO cases (id, errand_id, client_id, custodian, type, amount_recoverable, currency, steps, refs, status, jurisdiction, created_at, updated_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO cases (id, errand_id, client_id, custodian, type, amount_recoverable, currency, steps, refs, status, jurisdiction, security, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     case_id,
@@ -144,6 +152,7 @@ def upsert_case(case_dict: dict) -> Case:
                     refs_json,
                     status,
                     jurisdiction,
+                    security,
                     created_at,
                     now,
                 ),

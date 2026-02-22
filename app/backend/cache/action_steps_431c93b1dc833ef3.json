@@ -1,0 +1,22 @@
+{
+  "steps": [
+    "File formal tax reclaim with Australian Tax Office for BHP Group Ltd dividend citing AU-NO treaty entitlement to 15% withholding rate versus 25% applied",
+    "Submit Form NAT 3157 (Application for Refund of Franking Credits) with supporting documentation showing Norwegian tax residency and treaty eligibility",
+    "Contact Citigroup Australia to request assistance with ATO reclaim process and provide custodian confirmation of incorrect withholding",
+    "Follow up with Skatteetaten to ensure proper foreign tax credit treatment of the reclaimed amount once received"
+  ],
+  "references": [
+    {
+      "title": "ATO \u2013 Withholding from Dividends Paid to Foreign Residents",
+      "url": "https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/income/withholding-from-dividends-paid-to-foreign-residents"
+    },
+    {
+      "title": "AU Treasury \u2013 Income Tax Treaties Table",
+      "url": "https://treasury.gov.au/tax-treaties/income-tax-treaties"
+    },
+    {
+      "title": "Skatteetaten \u2013 Reduced WHT on Dividends",
+      "url": "https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/reduced-withholding-tax-on-dividends/"
+    }
+  ]
+}

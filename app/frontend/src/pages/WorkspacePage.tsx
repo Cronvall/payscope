@@ -14,7 +14,7 @@ const MIN_DETAIL_WIDTH = 320
 const MAX_LOG_WIDTH = 500
 const MAX_ACTIONS_WIDTH = 700
 const DEFAULT_LOG_WIDTH = 280
-const DEFAULT_ACTIONS_WIDTH = 360
+const DEFAULT_ACTIONS_WIDTH = 460
 
 export default function WorkspacePage() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)

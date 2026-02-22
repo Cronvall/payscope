@@ -120,7 +120,6 @@ export interface Message {
 }
 
 export type CaseStatus =
-  | 'NEW'
   | 'AI_ANALYZED'
   | 'UNDER_REVIEW'
   | 'DOCUMENT_REQUESTED'
@@ -173,6 +172,8 @@ export interface Case {
   status: CaseStatus
   /** WHT jurisdiction (e.g. Germany, Japan) for team specialization */
   jurisdiction?: string
+  /** Stock/commodity (e.g. SAP SE, Novartis AG) relevant to the case */
+  security?: string
   history?: CaseStatusHistoryEntry[]
   created_at: string
   updated_at: string

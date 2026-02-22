@@ -20,7 +20,6 @@ const TYPE_LABELS: Record<string, string> = {
 }
 
 const CASE_STATUSES: CaseStatus[] = [
-  'NEW',
   'AI_ANALYZED',
   'UNDER_REVIEW',
   'DOCUMENT_REQUESTED',
@@ -30,7 +29,6 @@ const CASE_STATUSES: CaseStatus[] = [
 ]
 
 const STATUS_STYLES: Record<CaseStatus, string> = {
-  NEW: 'bg-zinc-700/80 text-zinc-300',
   AI_ANALYZED: 'bg-blue-900/50 text-blue-300',
   UNDER_REVIEW: 'bg-amber-900/50 text-amber-300',
   DOCUMENT_REQUESTED: 'bg-orange-900/50 text-orange-300',
@@ -102,6 +100,9 @@ function ActionDetailView({
             className="w-32 rounded border border-zinc-700 bg-zinc-900 px-2 py-1 font-mono text-xs text-zinc-300 placeholder-zinc-500"
           />
         </div>
+      )}
+      {action.security && (
+        <p className="text-xs font-medium text-zinc-400">{action.security}</p>
       )}
       <p className="font-mono text-sm font-medium text-zinc-200">
         {action.client_id} · {action.custodian}

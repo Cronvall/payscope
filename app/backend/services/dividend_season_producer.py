@@ -53,6 +53,19 @@ def _jurisdiction_from_errand(errand: dict) -> str:
     return "Unknown"
 
 
+def _security_from_errand(errand: dict) -> str:
+    """Derive stock/commodity name from first payment (company or ticker)."""
+    payments = errand.get("payments") or []
+    for pay in payments:
+        company = pay.get("company") or ""
+        ticker = pay.get("ticker") or ""
+        if company:
+            return company.strip()
+        if ticker:
+            return ticker.strip()
+    return ""
+
+
 def _load_errands() -> list[dict]:
     if not ERANDS_PATH.exists():
         return []
@@ -97,6 +110,7 @@ async def stream_errands(*, demo: bool = False):
                 "references": eval_result.get("suggested_references") or [],
                 "status": "pending",
                 "jurisdiction": _jurisdiction_from_errand(errand),
+                "security": _security_from_errand(errand),
             }
             yield {"type": "action", "payload": action_item}
 

@@ -23,7 +23,6 @@ const TYPE_LABELS: Record<string, string> = {
 }
 
 const STATUS_BADGE_STYLES: Record<CaseStatus, string> = {
-  NEW: 'bg-zinc-700/80 text-zinc-300',
   AI_ANALYZED: 'bg-blue-900/50 text-blue-300',
   UNDER_REVIEW: 'bg-amber-900/50 text-amber-300',
   DOCUMENT_REQUESTED: 'bg-orange-900/50 text-orange-300',
@@ -75,6 +74,9 @@ export default function ActionItemCard({ action, selected, onClick }: ActionItem
           </span>
         </div>
       </div>
+      {action.security && (
+        <p className="text-xs font-medium text-zinc-400">{action.security}</p>
+      )}
       <p className="font-mono text-sm font-medium text-zinc-200">
         {action.client_id} · {action.custodian}
       </p>
